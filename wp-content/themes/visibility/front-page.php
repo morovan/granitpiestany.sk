@@ -35,7 +35,7 @@ endwhile;endif; ?>
             <a href="<?php the_permalink(); ?>">
               <div>
                 <?php
-                if(basename(get_permalink())=='nova-polianka'){echo trans('hospital_lang', 'Hospital');}else{echo trans('hotel_lang', 'Hotel');} ?> Granit
+                echo trans('hotel_lang', 'Hotel'); ?> Granit
                 <h1><?php the_title(); ?></h1>
                 <?php
                   if(get_field('subtittle_hotel')){
