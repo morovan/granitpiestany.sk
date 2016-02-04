@@ -34,8 +34,6 @@ endwhile;endif; ?>
             <?php } ?>
             <a href="<?php the_permalink(); ?>">
               <div>
-                <?php
-                echo trans('hotel_lang', 'Hotel'); ?> Granit
                 <h1><?php the_title(); ?></h1>
                 <?php
                   if(get_field('subtittle_hotel')){
