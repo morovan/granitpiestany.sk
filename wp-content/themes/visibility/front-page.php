@@ -19,11 +19,10 @@ if(get_field('fb_url')){
 endwhile;endif; ?>
   <div class="row hotels">
     <?php
-  $posts = get_posts(array('post_type' => 'hotel'));
+  $posts = get_posts(array('post_type' => 'offer'));
 
   foreach ( $posts as $post ) : ?>
     <?php the_post($post); ?>
-    <?php if(basename(get_permalink())!='nova-polianka'){ ?>
     <div class="col-sm-6 col-md-3">
       <section>
         <div class="hotel">
@@ -60,7 +59,6 @@ endwhile;endif; ?>
         </div>
       </section>
     </div>
-    <?php } ?>
     <?php endforeach; ?>
   </div>
   <div class="hotel-alt"></div>
