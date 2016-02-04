@@ -26,7 +26,7 @@ endwhile;endif; ?>
     <div class="col-sm-6 col-md-3">
       <section>
         <div class="hotel">
-          <header>
+            <header>
             <?php if(has_post_thumbnail()){ ?>
               <div class="hotel-img" style="background-image:url(<?php echo get_the_post_thumbnail_src(get_the_post_thumbnail($post_id,'large')); ?>)">
                 <div class="toggle to-open"><span class="ion-android-arrow-up"></span></div>
