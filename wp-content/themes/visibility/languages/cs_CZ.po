@@ -1,0 +1,185 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2015-11-26 12:52+0100\n"
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"X-Generator: Poedit 1.6.9\n"
+"Language: sk_SK\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "Sorry, this page does not exist."
+msgstr "Je nám líto, tato stránka neexistuje."
+
+msgid "Page %s"
+msgstr "Strana %s"
+
+msgid "Read more"
+msgstr "Číst více"
+
+msgid "Forward"
+msgstr "Přeposlat"
+
+msgid "Sorry, there are no articles."
+msgstr "Je nám líto, pro tento obsah neexistují žádné články."
+
+msgid "Search in articles"
+msgstr "Hledat v článcích"
+
+msgid "Search results for: %s"
+msgstr "Výsledky hledání pro: %s"
+
+msgid "Sorry, there are no results matching criteria."
+msgstr "Je nám líto, neexistují žádné výsledky vyhovující kritériím."
+
+msgid "Archive"
+msgstr "Archiv článků z"
+
+msgid "Print"
+msgstr "Vytisknout"
+
+msgid "All articles"
+msgstr "Všechny články"
+
+msgid "Previous"
+msgstr "Předešlé"
+
+msgid "Next"
+msgstr "Další"
+
+msgid "Go to home page"
+msgstr "Přejít na domovskou stránku"
+
+msgid "or use search"
+msgstr "nebo použít vyhledávání"
+
+msgid "You don’t have enough permission to access this page."
+msgstr "Nemáte dostatečná oprávnění pro přístup k této stránce."
+
+msgid "Theme Settings"
+msgstr "Nastavení témy"
+
+msgid "Clear and create new"
+msgstr "Vymazat a vytvořit nové"
+
+msgid "No Theme Settings found"
+msgstr "Žádná nastavení témata nebyly nalezeny"
+
+msgid "Go to settings"
+msgstr "Přejít k nastavením"
+
+msgid "Documentation"
+msgstr "Dokumentace"
+
+msgid "Articles category"
+msgstr "Články kategorie"
+
+msgid "Articles author"
+msgstr "Články autora"
+
+msgid "Articles containing the tag"
+msgstr "Články, obsahující značku"
+
+msgid "Articles of the Day"
+msgstr "Články z dne"
+
+msgid "Articles of the Month"
+msgstr "Články z měsíce"
+
+msgid "Articles of the Year"
+msgstr "Články z roku"
+
+msgid "Articles"
+msgstr "Seznam článků"
+
+msgid ""
+"This website uses cookies to provide services, personalization of "
+"advertising and analytics. By using this website you agree with use of "
+"cookies."
+msgstr ""
+"Tento web používá k poskytování služeb, personalizaci reklam a analýze návštěvnosti soubory cookie. Používáním tohoto webu s tím souhlasíte."
+
+msgid "Continue"
+msgstr "Souhlasím"
+
+msgid "More information"
+msgstr "Více informací"
+
+msgid "Top"
+msgstr "Nahoru"
+
+msgid "Toggle navigation"
+msgstr "Menu"
+
+msgid "Stats"
+msgstr "Statistiky"
+
+msgid "Translations"
+msgstr "Překlady"
+
+msgid "Nothing found"
+msgstr "Nepodařilo se najít"
+
+msgid "Testimonials"
+msgstr "Řekli o nás"
+
+msgid "Edit"
+msgstr "Upravit"
+
+msgid "View"
+msgstr "Ukázat"
+
+msgid "All"
+msgstr "Všechno"
+
+msgid "Create new"
+msgstr "Vytvořit nový"
+
+msgid "Hotels"
+msgstr "Hotely"
+
+msgid "Hotel"
+msgstr "Hotel"
+
+msgid "Events"
+msgstr "Akce"
+
+msgid "Event"
+msgstr "Akce"
+
+msgid "Hotel Offers"
+msgstr "Speciálni ponuky"
+
+msgid "Hotel Offer"
+msgstr "Speciálni ponuky"
+
+msgid "Event Offers"
+msgstr "Ponuka akcí"
+
+msgid "Event Offer"
+msgstr "Ponuka akce"
+
+msgid "Position Offers"
+msgstr "Kariera"
+
+msgid "Position Offer"
+msgstr "Kariera"
+
+msgid "Granit videos"
+msgstr "Granit videá"
+
+msgid "Granit video"
+msgstr "Granit video"
+
+msgid "Horezza News"
+msgstr "Horezza novinky"
+
+msgid "Horezza New"
+msgstr "Horeza novinka"
+
+msgid "First Widget Area"
+msgstr "Plocha prvního widgetu"

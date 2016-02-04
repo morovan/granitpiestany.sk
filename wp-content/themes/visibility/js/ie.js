@@ -1,0 +1,15 @@
+$(function(){
+  $('#booking').change(function(){
+    if($('#booking').is(':checked')){
+      $('.booking').addClass('js');
+    }else{
+      $('.booking').removeClass('js');
+    }
+  });
+  $('.booking-close').click(function(){
+    $('.booking').removeClass('js');
+  });
+  $('.booking-btn').click(function(){
+    $('.booking').addClass('js');
+  });
+});

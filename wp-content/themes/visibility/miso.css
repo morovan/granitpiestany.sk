@@ -1,0 +1,662 @@
+.h1,
+h1 {
+  font-size: 46px;
+  color: #988f76;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: normal;
+}
+.h1{
+  margin:80px 0;
+}
+.h1 strong{
+  color:#695b4e;
+  font-weight:700;
+}
+
+h3,
+.h3,
+.h2,
+h2 {
+  color: #695b4e;
+  font-size: 32px;
+}
+
+.upper-case {
+  text-transform: uppercase;
+}
+
+/* -- hotel offers -- */
+
+.hotel-offer-filter {
+  color: #695b4e;
+  font-size: 18px;
+  font-weight: normal;
+  margin:40px 0 0 0;
+}
+.hotel-offer-filter label{
+  text-transform: uppercase;
+  color: #695b4e;
+  font-size: 18px;
+  font-weight: normal;
+}
+.hotel-offer-filter label {
+  margin-right: 40px;
+}
+.hotel-offer .hotel-offer-inner{
+  border-top: 1px solid #ccc4b0;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.hotel-offer-available span {
+  color: #aa862e;
+}
+.offer-for-hotel a,
+.offer-for-hotel span {
+  text-transform: uppercase;
+  color: #aa862e;
+}
+
+.offer-price {
+  color: #66883f;
+  font-weight: bold;
+  font-size: 32px;
+  padding-top: 8px;
+}
+
+.btn-more {
+  color: #ab862e;
+  text-transform: uppercase;
+  border-radius: 0;
+  padding: 15px 30px;
+  border: 1px solid #ab862e;
+
+  margin-left: 35px;
+  font-size: 18px;
+  min-width: 170px;
+}
+.no-margins {
+  margin: 0;
+}
+
+.btn-more:hover,
+.btn-more:focus {
+  background-color: #ab862e;
+  border: 1px solid #ab862e;
+  color: #ffffff;
+}
+.go-back-wrap a {
+  margin-bottom: 15px;
+  display: block;
+}
+@media (min-width: 1000px) {
+  .go-back-wrap {
+    position: relative;
+  }
+  .go-back-wrap a {
+    z-index: 1;
+    position: absolute;
+    top: 17px;
+    text-transform: uppercase;
+    right: 0;
+  }
+}
+
+/* pagination */
+
+
+.pagination>li>a {
+  margin: 15px;
+}
+.pagination>li>a, .pagination>li>span {
+  color: #66883f;
+  border: 1px solid transparent;
+  background: none;
+  font-weight: bold;
+  font-size: 24px;
+  padding: 8px 20px;
+
+}
+.pagination>li:last-child>a, .pagination>li:last-child>span,
+.pagination>li:first-child>a, .pagination>li:first-child>span {
+  border-radius: 0;
+}
+.pagination>li>span.current {
+  color: #695b4e;
+  border: 1px solid #695b4e;
+  background: none;
+  margin: 15px;
+}
+.pagination>li>a:hover, .pagination>li>a:focus {
+  color: #695b4e;
+  border: 1px solid #695b4e;
+  background: none;
+}
+
+/* some custom shits */
+.line {
+  display: block;
+  height: 1px;
+  width: 100%;
+  background-color: #ccc4b0;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+/* page contact */
+.page-contact {
+  line-height: 1.5em;
+}
+.page-contact h3{
+  margin-top: 0;
+  text-transform: uppercase;
+}
+.page-contact .contact-email-phone {
+  padding: 70px 0;
+}
+.page-contact .contact-email-phone > span{
+  margin-right: 70px;
+display: inline-block;
+margin-bottom: 10px;
+}
+.page-contact .contact-email-phone .ion-ios-telephone-outline,
+.page-contact .contact-email-phone .ion-ios-email-outline {
+  margin-right: 20px;
+  padding-top: 7px;
+}
+.page-contact .contact-email-phone {
+  color: #aa862e;
+  font-weight: bold;
+  font-size: 38px;
+}
+.page-contact .contact-email-phone a{
+  color:#aa862e;
+}
+.page-contact .contact-email-phone a:hover{
+  color:#66883f;
+}
+.page-contact .contact-us-title {
+  font-weight: bold;
+  font-size: 46px;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+.wpcf7 input[type=text], .wpcf7 input[type=email], .wpcf7 input[type=date], .wpcf7 input[type=number], .wpcf7 select {
+  display: inline-block;
+  width: 70%;
+  max-width: 300px;
+  height: 40px;
+  padding: 10px;
+  margin: 0 0 8px 0;
+  background: #695b4e;
+  color: #d7d7d7;
+}
+.wpcf7 textarea {
+  width: 100%;
+  height: 140px;
+  padding: 10px;
+  margin: 0 0 5px 0;
+  background: #695b4e;
+  color: #eee;
+}
+
+.wpcf7 input::-webkit-input-placeholder{
+  color:#aa9f94;
+  font-style:italic;
+}
+.wpcf7 input:-moz-placeholder{
+  color:#aa9f94;
+  font-style:italic;
+}
+.wpcf7 input::-moz-placeholder{
+  color:#aa9f94;
+  font-style:italic;
+}
+.wpcf7 input:-ms-input-placeholder{
+  color:#aa9f94;
+  font-style:italic;
+}
+.wpcf7 textarea::-webkit-input-placeholder{
+  color:#aa9f94;
+  font-style:italic;
+}
+.wpcf7 textarea:-moz-placeholder{
+  color:#aa9f94;
+  font-style:italic;
+}
+.wpcf7 textarea::-moz-placeholder{
+  color:#aa9f94;
+  font-style:italic;
+}
+.wpcf7 textarea:-ms-input-placeholder{
+  color:#aa9f94;
+  font-style:italic;
+}
+
+.wpcf7 .shadow {
+  color: #9da3a6;
+  font-size: 12px;
+}
+.wpcf7 .wpcf7-submit {
+  color: #ab862e;
+  font-size: 18px;
+  border: 1px solid #ab862e;
+  padding: 10px 20px;
+  background: transparent;
+  text-transform: uppercase;
+}
+
+.wpcf7 input,.wpcf7 select,.wpcf7 textarea{
+  border:2px solid transparent;
+}
+.wpcf7 input.wpcf7-not-valid,.wpcf7 select.wpcf7-not-valid,.wpcf7 textarea.wpcf7-not-valid{
+  border-color:#f00;
+}
+.wpcf7 input:focus,.wpcf7 select:focus,.wpcf7 textarea:focus{
+  border-color:#aa862e;
+  outline:none;
+  box-shadow:none;
+  -webkit-box-shadow:none;
+}
+.wpcf7 input.wpcf7-submit:hover,.wpcf7 input.wpcf7-submit:focus{
+  border-color:#695b4e;
+  color: #695b4e;
+}
+
+.wpcf7 label {
+  font-weight: normal;
+  display: block;
+  text-align: right;
+  padding: 10px 0 0 0;
+  margin: 0 -15px 0 15px;
+  cursor: pointer;
+}
+.map-canvas {
+  height: 220px;
+}
+.contact-hotel-detail {
+  margin: 45px 0;
+}
+
+/* out hotels */
+
+.our-hotel {
+  margin: 10px auto;
+}
+a.dark-brown:hover, a.dark-brown:hover h2{
+  color:#ab862e;
+  text-decoration:none;
+}
+.our-hotel h2{
+  margin-top: 0;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  font-size:46px;
+}
+.our-hotel-detail h2{
+  margin-top: 35px;
+  text-transform: none;
+}
+.our-hotel-links{
+  line-height:1.9;
+}
+.our-hotel-links a {
+  display: block;
+ margin-bottom: 4px;
+text-transform:uppercase;
+}
+.our-hotel-links a .ion{
+font-size:24px;
+position: relative;
+padding: 0 7px 0 0;
+top: 2px;
+}
+.our-hotel .btn-more {
+  margin-bottom: 15px;
+}
+.our-hotel-detail h3 {
+  text-transform: uppercase;
+  font-size: 46px;
+  color: #988f76;
+  margin-bottom: 55px;
+  margin-top: 0;
+}
+.our-hotel-detail ul {
+  list-style: none;
+}
+.our-hotel-detail ul li{
+  list-style: none;
+}
+.our-hotel-detail .text-after-booking strong {
+  font-size: 18px;
+  color: #695b4e;
+}
+.booking-form .h4 {
+  text-transform: uppercase;
+  color: #fdfbf8;
+  font-size: 32px;
+}
+
+@media all and (min-width:767px) {
+  .our-hotel-img-wrap.col-sm-6 {
+    padding-right: 85px;
+  }
+  .our-hotel-img-wrap.col-sm-6.pull-right {
+    padding-right: 0;
+    padding-left: 85px;
+  }
+  .our-hotel {
+    margin: 50px auto;
+  }
+  .about-granit .our-hotel {
+    margin-bottom:0;
+  }
+}
+
+/* HOREZZA NEWS */
+.page-horezza-news h1{
+  margin-bottom: 90px;
+  text-transform: uppercase;
+}
+.horezza-news-first h2{
+  font-size: 46px;
+  font-weight: bold;
+  color: #695b4e;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+.m-top-20 {
+  margin-top: 20px;
+}
+.m-top-40 {
+  margin-top: 40px;
+}
+#carousel-horezza {
+  margin:90px 0;
+}
+.hp-hn #carousel-horezza{
+  margin:0;
+}
+#carousel-horezza .item-inner {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+#carousel-horezza h3 {
+  font-size: 14px;
+  color: #66883f;
+  font-weight: normal;
+  text-align: center;
+}
+#carousel-horezza a:hover h3{
+  color:#AB882E;
+}
+#carousel-horezza a:hover{
+  text-decoration:none;
+}
+ /* carousel */
+.carousel-control.right, .carousel-control.left {
+  background: none;
+}
+.carousel-wrap {
+ position: relative;
+}
+.carousel-wrap .carousel-control {
+  position: absolute;
+  opacity: 1;
+}
+.carousel-wrap .carousel-control:focus,
+.carousel-wrap .carousel-control:hover {
+  opacity: 0.7;
+}
+.carousel-wrap .carousel-control.left {
+  left: -110px;
+}
+.carousel-wrap .carousel-control.right {
+  right: -110px;
+}
+.carousel-wrap.hp-hn .carousel-control.left {
+  left:0;
+  width:11%;
+}
+.carousel-wrap.hp-hn .carousel-control.right {
+  right:0;
+  width:11%;
+}
+.carousel-wrap .carousel-control .ion {
+  font-size: 22px;
+  margin-top: 80px;
+  color: #66883f;
+}
+.carousel-wrap.hp-hn .carousel-control .ion{
+  margin-top:115px;
+}
+
+ /* about granit */
+
+.about-granit h2 {
+  font-size: 46px;
+}
+.icons .icon {
+  min-height: 68px;
+}
+@media (min-width: 768px) {
+  .icons.row > div {
+    min-height: 230px;
+  }
+}
+.icons img {
+  margin: 55px auto 0 auto;
+  padding-bottom:35px;
+}
+.about-granit-after-img h3{
+  color:#b69a71;
+  font-size:22px;
+  font-weight:400;
+  margin:40px 0 20px 0;
+}
+
+ /* hotel */
+ul.ul-equipment {
+  margin-bottom: 60px;
+  list-style: none;
+  color: #aa862e;
+  text-transform: uppercase;
+  text-indent: -10px;
+}
+ul.ul-equipment li {
+  margin-right: 50px;
+  position: relative;
+  line-height: 36px;
+  display:inline;
+}
+
+ul.ul-equipment li:before {
+  content: "\f3fd"; /* FontAwesome char code inside the '' */
+  font-family: "Ionicons", sans-serif;
+  font-size: 40px;
+  width: 15px;
+  position: absolute;
+  left: -27px;
+}
+
+.single-hotel h3{
+  text-transform: uppercase;
+  text-align: center;
+  color: #988f76;
+  font-size: 46px;
+  margin-bottom: 70px;
+  margin-top:90px;
+ }
+
+@media (min-width: 1200px) {
+  .single-hotel .ngg-gallery-thumbnail-box {
+    margin-right: 45px;
+  }
+  .single-hotel .ngg-gallery-thumbnail-box:nth-of-type(4n){
+    margin-right: 0;
+  }
+  .single-hotel .ngg-gallery-thumbnail-box:nth-of-type(4n +1){
+    margin-left: 10px;
+  }
+}
+@media (min-width: 768px) {
+  .single-hotel .ngg-gallery-thumbnail-box {
+    max-width: 230px;
+  }
+  .single-hotel .ngg-gallery-thumbnail-box img{
+    max-width: 100% !important;
+  }
+  /*.single-hotel .ngg-gallery-thumbnail-box:nth-of-type(4n){*/
+    /*margin-right: 0;*/
+  /*}*/
+  /*.single-hotel .ngg-gallery-thumbnail-box:nth-of-type(4n +1){*/
+    /*margin-left: 10px;*/
+  /*}*/
+}
+
+ /* position page */
+
+.position-detail ul,
+.panel-position ul {
+  list-style-type: none;
+  padding-left: 15px;
+}
+.position-detail ul > li,
+.panel-position ul > li {
+  position: relative;
+}
+.position-detail ul > li:before,
+.panel-position ul > li:before {
+  content: "- ";
+  text-indent: -9px;
+  position: absolute;
+  left: -5px;
+}
+
+.panel-position h4,
+.position-detail h4{
+  margin-bottom: 0;
+  color: #b69a71;
+}
+.p-r-20 {
+  padding-right:25px;
+}
+.positions h1,
+.positions h2,
+.position-for-hotel span,
+.position-title {
+  text-transform: uppercase;
+}
+.positions h2 {
+  font-size: 46px;
+}
+.position-title h3{
+  font-size: 18px;
+  font-weight: bold;
+  color: #66883f;
+  margin-top: 13px;
+}
+.panel-position .panel-title a:hover,
+.panel-position .panel-title a:focus {
+  color: #66883f;
+}
+.panel-position {
+  background: none;
+  border: none;
+  border-top: 1px solid #ccc4b0;
+  border-radius: 0;
+  margin-top: 0;
+}
+.panel-group {
+  border-bottom: 1px solid #ccc4b0;
+}
+.panel-group .panel-position+.panel-position {
+  margin-top: 0;
+}
+.panel-position .panel-title > span {
+  padding-top: 11px;
+}
+.panel-position .more,
+.panel-position .panel-close {
+  cursor: pointer;
+}
+.panel-position .panel-close:hover,
+.panel-position .panel-close:focus {
+  opacity: 0.7;
+}
+.panel-position .panel-heading a + span + span + span > .more {
+  display: none;
+}
+.panel-position .panel-heading a + span + span + span > .panel-close {
+  display: block;
+}
+.panel-position .panel-heading:not(.active) a + span + span + span > .panel-close {
+  display: none;
+}
+.panel-position .panel-heading:not(.active) a + span + span + span > .more {
+  display: block;
+}
+.ion-android-close {
+  color: #66883f;
+  font-size: 18px;
+}
+ /* cta position */
+.cta.bg-brown {
+  background-color: #3f342a;
+  padding: 50px;
+}
+.cta .cta-heading {
+  color: #fdfbf8;
+  font-size: 32px;
+}
+.cta .cta-body {
+  margin-top: 10px;
+  color: #988f76;
+}
+.cta a {
+  color: #aa862e;
+}
+.cta a:hover,
+.cta a:focus {
+  text-decoration: underline;
+  color: #aa862e;
+}
+
+.squater {
+    height: 260px;
+    background: no-repeat center;
+    background-size: cover;
+}
+.footer {
+    margin: 100px 0 0 0;
+}
+
+.page-template-default .ion-android-arrow-forward{
+ margin-right: 5px;
+}
+
+.go-up {
+    color: #ab862e;
+    font-size: 40px;
+    width: 65px;
+    height: 65px;
+    margin-right: 45px;
+    margin-bottom: 50px;
+    display: block;
+    border: 1px solid #ab862e;
+    text-align: center;
+    border-radius: 50%;
+    line-height:63px;
+}
+.go-up:hover{
+  color:#35291F;
+  border-color:#35291F;
+}
+@media (max-width: 768px) {
+.wpcf7 label {
+text-align: left;
+margin-bottom: 5px;
+}
+}

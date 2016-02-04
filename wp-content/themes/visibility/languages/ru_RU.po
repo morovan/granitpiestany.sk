@@ -1,0 +1,181 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2015-08-28 17:34+0100\n"
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"X-Generator: Poedit 1.6.9\n"
+"Language: en_US\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "Sorry, this page does not exist."
+msgstr ""
+
+msgid "Page %s"
+msgstr ""
+
+msgid "Read more"
+msgstr "Читать дальше"
+
+msgid "Forward"
+msgstr ""
+
+msgid "Sorry, there are no articles."
+msgstr ""
+
+msgid "Search in articles"
+msgstr ""
+
+msgid "Search results for: %s"
+msgstr ""
+
+msgid "Sorry, there are no results matching criteria."
+msgstr ""
+
+msgid "Archive"
+msgstr ""
+
+msgid "Print"
+msgstr ""
+
+msgid "All articles"
+msgstr ""
+
+msgid "Previous"
+msgstr "Предыдущая"
+
+msgid "Next"
+msgstr "Следующая"
+
+msgid "Go to home page"
+msgstr "домой"
+
+msgid "or use search"
+msgstr ""
+
+msgid "You don’t have enough permission to access this page."
+msgstr ""
+
+msgid "Theme Settings"
+msgstr ""
+
+msgid "Clear and create new"
+msgstr ""
+
+msgid "No Theme Settings found"
+msgstr ""
+
+msgid "Go to settings"
+msgstr ""
+
+msgid "Documentation"
+msgstr ""
+
+msgid "Articles category"
+msgstr ""
+
+msgid "Articles author"
+msgstr ""
+
+msgid "Articles containing the tag"
+msgstr ""
+
+msgid "Articles of the Day"
+msgstr ""
+
+msgid "Articles of the Month"
+msgstr ""
+
+msgid "Articles of the Year"
+msgstr ""
+
+msgid "Articles"
+msgstr ""
+
+msgid "This website uses cookies to provide services, personalization of advertising and analytics. By using this website you agree with use of cookies."
+msgstr ""
+
+msgid "Continue"
+msgstr ""
+
+msgid "More information"
+msgstr ""
+
+msgid "Top"
+msgstr ""
+
+msgid "Toggle navigation"
+msgstr ""
+
+msgid "Stats"
+msgstr ""
+
+msgid "Translations"
+msgstr ""
+
+msgid "Nothing found"
+msgstr ""
+
+msgid "Testimonials"
+msgstr ""
+
+msgid "Edit"
+msgstr ""
+
+msgid "View"
+msgstr ""
+
+msgid "All"
+msgstr ""
+
+msgid "Create new"
+msgstr ""
+
+msgid "Hotels"
+msgstr ""
+
+msgid "Hotel"
+msgstr ""
+
+msgid "Events"
+msgstr ""
+
+msgid "Event"
+msgstr ""
+
+msgid "Hotel Offers"
+msgstr ""
+
+msgid "Hotel Offer"
+msgstr ""
+
+msgid "Event Offers"
+msgstr ""
+
+msgid "Event Offer"
+msgstr ""
+
+msgid "Position Offers"
+msgstr ""
+
+msgid "Position Offer"
+msgstr ""
+
+msgid "Granit videos"
+msgstr ""
+
+msgid "Granit video"
+msgstr ""
+
+msgid "Horezza News"
+msgstr ""
+
+msgid "Horezza New"
+msgstr ""
+
+msgid "First Widget Area"
+msgstr ""
