@@ -6,7 +6,7 @@
         <?php
         $posts = get_posts(array('post_type' => 'hotel'));
         foreach ( $posts as $post ): ?>
-        <a href="<?php the_permalink(); ?>">
+        <?php if(get_field('hotel_url')){ echo '<a href="'.get_field('hotel_url').'">'; } ?>
           <div>
             <?php if(basename(get_permalink())=='nova-polianka'){echo trans('hospital_lang', 'Hospital');}else{echo trans('hotel_lang', 'Hotel');} ?> Granit
             <strong><?php the_title(); ?></strong>
@@ -16,7 +16,7 @@
               }
             ?>
           </div>
-        </a>
+        <?php if(get_field('hotel_url')){ echo '</a>'; } ?>
         <?php the_post($post); ?>
         <?php endforeach; ?>
         <div class="clear"></div>
@@ -26,7 +26,7 @@
           <?php wp_nav_menu(array('theme_location'=>'footer_primary','items_wrap'=>'<ul class="nav navbar-nav">%3$s</li></ul>')); ?>
           <div class="row">
             <div class="col-md-5 col-sm-6">
-              <?php wp_nav_menu(array('theme_location'=>'footer_secondary','items_wrap'=>'<ul class="footer-secondary-menu">%3$s</li></ul>')); ?>
+
             </div>
             <div class="col-md-5 col-sm-6">
               <?php echo trans('subscribe_text_lang', 'Subscribe to the newsletter and get overview for special offers.'); ?>
