@@ -1,37 +1,4 @@
-<?php
-$oldpid = $_GET['page_id'];
-$oldcid = $_GET['cat'];
-if($oldpid == '6'){
-  header("Location: http://www.".$_SERVER['SERVER_NAME']."/o-granite/");
-}else if($oldpid == '8'){
-  header("Location: http://www.".$_SERVER['SERVER_NAME']."/");
-}else if($oldpid == '97'){
-  header("Location: http://www.".$_SERVER['SERVER_NAME']."/kariera/");
-}else if($oldpid == '99'){
-  header("Location: http://www.".$_SERVER['SERVER_NAME']."/odpredaj-prebytocneho-majetku/");
-}else if($oldpid == '101'){
-  header("Location: http://www.".$_SERVER['SERVER_NAME']."/verejne-obstaravanie/");
-}else if($oldpid == '104'){
-  header("Location: http://www.".$_SERVER['SERVER_NAME']."/zverejnene-dokumenty/");
-}else if($oldpid == '267'){
-  header("Location: http://www.".$_SERVER['SERVER_NAME']."/");
-}else if($oldpid == '799'){
-  header("Location: http://www.".$_SERVER['SERVER_NAME']."/oznamovanie-protispolocenskej-cinnosti/");
-}else if($oldpid == '10'){
-  header("Location: http://www.".$_SERVER['SERVER_NAME']."/kariera/");
-}else if($oldpid == '511'){
-  header("Location: http://www.".$_SERVER['SERVER_NAME']."/zoznam-horezza-news/");
-}else if($oldpid == '44'){
-  header("Location: http://www.".$_SERVER['SERVER_NAME']."/kontakt/");
-}else if($oldpid == '530'){
-  header("Location: http://www.".$_SERVER['SERVER_NAME']."/kontakt/");
-}else if($oldpid == '369'){
-  header("Location: http://www.".$_SERVER['SERVER_NAME']."/promotion/");
-}
-if($oldcid == '3'){
-  header("Location: http://www.".$_SERVER['SERVER_NAME']."/specialne-ponuky/");
-}
-?><!DOCTYPE html><html lang="<?php echo substr(get_locale(),0,-3); ?>"><head><!--
+<!DOCTYPE html><html lang="<?php echo substr(get_locale(),0,-3); ?>"><head><!--
     _        _
    | | _    | |
    | || | _ | |
