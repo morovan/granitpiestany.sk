@@ -25,7 +25,7 @@ get_header(); ?>
         </div>
       </section>
       <section>
-        <div class="row our-hotel">
+        <div class="row our-hotel ">
           <div class="col-sm-6 our-hotel our-hotel-img-wrap full-width-img-wrap">
             <?php
             if(get_field('about_granit_after_img1')){
