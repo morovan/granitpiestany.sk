@@ -12,7 +12,6 @@ function theme_setup(){
   register_nav_menu('primary', __('Primary Menu', 'theme'));
   register_nav_menu('top', __('Top Menu', 'theme'));
   register_nav_menu('footer_primary', __('Footer Top Menu', 'theme'));
-  register_nav_menu('footer_secondary', __('Footer Left Menu', 'theme'));
 }
 add_action('after_setup_theme', 'theme_setup');
 

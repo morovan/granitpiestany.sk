@@ -7,34 +7,9 @@
 <input type="hidden" name="url" value="<?php echo "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]"; ?>">
 <div class="row">
   <div class="col-sm-6 col-md-3">
-    <?php if($hotel=='smrekovica'){ ?>
-    Hotel GRANIT
-    <strong class="selected-hotel">Smrekovica</strong>
-    <input type="hidden" name="hotel" value="Smrekovica" class="valid">
-    <?php }else if($hotel=='zemplinska-sirava'){ ?>
-    Hotel GRANIT
-    <strong class="selected-hotel">Zemplínska šírava</strong>
-    <input type="hidden" name="hotel" value="Zemplínska Šírava" class="valid">
-    <?php }else if($hotel=='tatranske-zruby'){ ?>
-    Hotel GRANIT
-    <strong class="selected-hotel">Tatranské Zruby</strong>
-    <input type="hidden" name="hotel" value="Tatranské Zruby" class="valid">
-    <?php }else if($hotel=='piestany'){ ?>
     Hotel GRANIT
     <strong class="selected-hotel">Piešťany</strong>
     <input type="hidden" name="hotel" value="Piešťany" class="valid">
-    <?php }else{ ?>
-    <label>
-      <?php echo trans('choose_hotel_lang', 'Choose hotel'); ?>
-      <select name="hotel" class="form-control booking-hotel">
-        <option selected disabled><?php echo trans('choose_hotel_lang', 'Choose hotel'); ?></option>
-        <option>Hotel Granit Smrekovica</option>
-        <option>Hotel Granit Zemplínska šírava</option>
-        <option>Hotel Granit Tatranské Zruby</option>
-        <option>Hotel Granit Piešťany</option>
-      </select><span></span>
-    </label>
-    <?php } ?>
   </div>
   <div class="col-sm-6 col-md-3">
     <label>
@@ -153,58 +128,10 @@
     <div class="booking-contact-email-phone">
       alebo nás kontaktujte na:
       <div>
-        <span itemprop="email"><a href="mailto:<?php
-        if($hotel=='smrekovica'){
-          echo 'recepcia.sm@granithotels.sk';
-        }else if($hotel=='zemplinska-sirava'){
-          echo 'recepcia.zs@granithotels.sk';
-        }else if($hotel=='tatranske-zruby'){
-          echo 'recepcia.tz@granithotels.sk';
-        }else if($hotel=='piestany'){
-          echo 'recepcia.pn@granithotels.sk';
-        }else{
-          echo 'info@granithotels.sk';
-        }
-        ?>" class="bcea"><span class="ion-ios-email-outline ion"></span><span class="bce"><?php
-        if($hotel=='smrekovica'){
-          echo 'recepcia.sm@granithotels.sk';
-        }else if($hotel=='zemplinska-sirava'){
-          echo 'recepcia.zs@granithotels.sk';
-        }else if($hotel=='tatranske-zruby'){
-          echo 'recepcia.tz@granithotels.sk';
-        }else if($hotel=='piestany'){
-          echo 'recepcia.pn@granithotels.sk';
-        }else{
-          echo 'info@granithotels.sk';
-        }
-        ?></span></span></a>
+        <span itemprop="email"><a href="mailto:recepcia.pn@granithotels.sk" class="bcea"><span class="ion-ios-email-outline ion"></span><span class="bce">recepcia.pn@granithotels.sk</span></span></a>
       </div>
       <div>
-        <span itemprop="telephone"><a href="tel:<?php
-        if($hotel=='smrekovica'){
-          echo '+421914324188';
-        }else if($hotel=='zemplinska-sirava'){
-          echo '+421566492570';
-        }else if($hotel=='tatranske-zruby'){
-          echo '+421524267123';
-        }else if($hotel=='piestany'){
-          echo '+421337983111';
-        }else{
-          echo '+421333210600';
-        }
-        ?>" class="bcpa"><span class="ion-ios-telephone-outline ion"></span><span class="bcp"><?php
-        if($hotel=='smrekovica'){
-          echo '+421 (0) 914 324 188';
-        }else if($hotel=='zemplinska-sirava'){
-          echo '+421 (0) 56 6492 570';
-        }else if($hotel=='tatranske-zruby'){
-          echo '+421 (0) 52 426 71 23';
-        }else if($hotel=='piestany'){
-          echo '+421 (0) 33 7983 111';
-        }else{
-          echo '+421 (0) 33 3210 600';
-        }
-        ?></span></span></a>
+        <span itemprop="telephone"><a href="tel:+421337983111" class="bcpa"><span class="ion-ios-telephone-outline ion"></span><span class="bcp">+421 (0) 33 7983 111</span></span></a>
       </div>
     </div>
   </div>
