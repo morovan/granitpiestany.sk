@@ -72,6 +72,7 @@ $(function(){
   
   
   $('.home .alt-navbar').css('height',$(window).height());
+  
   $('.hotel-alt').addClass('js');
   
   if($(window).width()>976){
@@ -94,6 +95,7 @@ $(function(){
   $('.hotel,.hotel header a,.hotel-img,.hotel header a div').css('height',$h_hotel+'px');
   $('.hotel header a div').css('width',$w_hotel+'px');
   $('.hotel-img').css('margin-bottom','-'+$h_hotel+'px');
+  $('.fpip-container,.fpip-content').css('height',$(window).height()-$('.hotel-img').height()-181+'px');
   $('.alt-navbar h2').css('padding-top',$p_logo+'px');
   
   if($(window).height()<980){
@@ -113,6 +115,7 @@ $(function(){
  
   $(window).resize(function(){
     $('.home .alt-navbar').css('height',$(window).height());
+    
 
     if($(window).width()>976){
       $h_hotel = 13 * $(window).width()/4/25;
@@ -134,6 +137,7 @@ $(function(){
     $('.hotel,.hotel header a,.hotel-img,.hotel header a div').css('height',$h_hotel+'px');
     $('.hotel header a div').css('width',$w_hotel+'px');
     $('.hotel-img').css('margin-bottom','-'+$h_hotel+'px');
+    $('.fpip-container,.fpip-content').css('height',$(window).height()-$('.hotel-img').height()-181+'px');
     $('.alt-navbar h2').css('padding-top',$p_logo+'px');
 
     if($(window).height()<980){

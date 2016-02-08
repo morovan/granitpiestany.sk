@@ -183,8 +183,38 @@ a:hover,a:active,a:focus{
 }
 .home .alt-navbar{
   height:986px;
+  position:relative;
+}
+
+.fpip-container{
+  height:545px;
+  top:181px;
+  position:absolute;
+  z-index:1;
+  width:100%;
+}
+.fpip-container .row{
+  height:100%;
+  margin-left:0;
+  margin-right:0;
+}
+.fpip-container .row .col-sm-6{
+  height:100%;
+}
+.fpip{
+  position:absolute;
+  width:100%;
+  height:100%;
+  top:0;
+  left:0;
   background:url(images/temp-bg.jpg) no-repeat center top;
   background-size:cover;
+}
+.fpip-content{
+  display:table-cell;
+  height:545px;
+  width:2000px;
+  vertical-align:middle;
 }
 
 .alt-navbar h2{

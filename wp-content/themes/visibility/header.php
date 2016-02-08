@@ -141,11 +141,7 @@ endwhile;endif;wp_reset_query();
     </div>
   </div>
   <div class="alt-navbar"><?php if(is_front_page()){ ?>
-    <div class="alt-navbar-slider-wrap" id="slide2"></div>
-    <div class="alt-navbar-slider-wrap" id="slide3"></div>
-    <div class="alt-navbar-slider-wrap" id="slide4"></div>
-    <div class="alt-navbar-slider-wrap" id="slide5"></div>
-    <h2>yyy</h2>
+    
   <?php } ?></div>
 </header>
 <article>

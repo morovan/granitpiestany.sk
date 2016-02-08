@@ -17,6 +17,24 @@ if(get_field('fb_url')){
   $fb_url = get_field('fb_url');
 }
 endwhile;endif; ?>
+<div class="fpip-container">
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="fpip">
+        <div class="fpip-wrap" id="slide2"></div>
+        <div class="fpip-wrap" id="slide3"></div>
+        <div class="fpip-wrap" id="slide4"></div>
+        <div class="fpip-wrap" id="slide5"></div>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="fpip-content">
+        <h1>Granit Pieštany</h1>
+      </div>
+    </div>
+  </div>
+</div>
+
   <div class="row hotels">
     <?php
   $posts = get_posts(array('post_type' => 'offer'));
@@ -62,10 +80,10 @@ endwhile;endif; ?>
     <?php if(get_field('introduction_img1')){
     if(get_field('introduction_img2') && get_field('introduction_img3') && get_field('introduction_img4') && get_field('introduction_img5')){ ?>
     <style type="text/css">
-      .home .alt-navbar{
+      .fpip{
         background-image:url(<?php echo get_field('introduction_img1'); ?>);
       }
-      .alt-navbar-slider-wrap{
+      .fpip-wrap{
         display:none;
         position:absolute;
         width:100%;
@@ -127,7 +145,7 @@ endwhile;endif; ?>
     </script>
     <?php }else{ ?>
       <style type="text/css">
-        .home .alt-navbar{
+        .fpip{
           background-image:url(<?php echo get_field('introduction_img1'); ?>);
         }
       </style>
@@ -144,25 +162,4 @@ endwhile;endif; ?>
     <p><?php _e('Sorry, this page does not exist.','lang'); ?></p>
   <?php endif;wp_reset_query(); ?>
     
-<script type="text/javascript">
-  $(document).ready(function() {
-
-      var owl = $("#carousel-horezza");
-      owl.owlCarousel({
-        itemsCustom : [
-          [1, 2],
-          [1000, 2]
-        ]
-      });
-      $(".carousel-wrap .right").click(function(){
-          owl.trigger('owl.next');
-          return false;
-      });
-      $(".carousel-wrap .left").click(function(){
-          owl.trigger('owl.prev');
-          return false;
-      });
-
-  });
-</script>
 <?php get_footer(); ?>
