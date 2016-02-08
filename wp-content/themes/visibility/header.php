@@ -145,7 +145,7 @@ endwhile;endif;wp_reset_query();
     <div class="alt-navbar-slider-wrap" id="slide3"></div>
     <div class="alt-navbar-slider-wrap" id="slide4"></div>
     <div class="alt-navbar-slider-wrap" id="slide5"></div>
-    <h2>AAA</h2>
+    <h2>BBB</h2>
   <?php } ?></div>
 </header>
 <article>
