@@ -44,6 +44,26 @@ get_header(); ?>
             </div>
           </div>
         </div>
+
+          <div class="row">
+            <div class="col-sm-6 our-hotel our-hotel-img-wrap full-width-img-wrap">
+              <?php
+              if(get_field('about_granit__img2')){
+                echo do_shortcode(get_field('about_granit_img2'));
+              }
+              ?>
+            </div>
+            <div class="col-sm-6 our-hotel">
+              <div class="container-half">
+                <?php
+                if(get_field('about_granit_after_img2')){
+                  echo do_shortcode(get_field('about_granit_after_img2'));
+                }
+                ?>
+              </div>
+            </div>
+          </div>
+
         </div>
       </section>
       <div class="container about-granit-after-img">
