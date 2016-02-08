@@ -71,36 +71,6 @@ $(function(){
 
     $($id+'.booking-summary-hotel').html($($id+'.valid').val());
 
-    $($id+'.booking-hotel').change(function(){
-      $id = '#'+$(this).closest('.booking-form').attr('id')+' ';
-      $($id+'.booking-summary-hotel').html($(this).val());
-      $($id+'.booking-hotel').removeClass('disabled');
-      $($id+'.booking-hotel').removeClass('has-error');
-      $($id+'.booking-hotel+span').html('');
-      $($id+'.booking-hotel').addClass('valid');
-      
-      if($(this).val()=='Hotel Granit Smrekovica'){
-        $mail = 'recepcia.sm@granithotels.sk';
-        $telws = '+421 (0) 914 324 188';
-        $tel = '+421914324188';
-      }else if($(this).val()=='Hotel Granit Zemplínska šírava'){
-        $mail = 'recepcia.zs@granithotels.sk';
-        $telws = '+421 (0) 56 6492 570';
-        $tel = '+421566492570';
-      }else if($(this).val()=='Hotel Granit Tatranské Zruby'){
-        $mail = 'recepcia.tz@granithotels.sk';
-        $telws = '+421 (0) 52 426 71 23';
-        $tel = '+421524267123';
-      }else if($(this).val()=='Hotel Granit Piešťany'){
-        $mail = 'recepcia.pn@granithotels.sk';
-        $telws = '+421 (0) 33 7983 111';
-        $tel = '+421337983111';
-      }
-      $($id+'.bce').html($mail);
-      $($id+'.bcea').attr('href','mailto:'+$mail);
-      $($id+'.bcp').html($telws);
-      $($id+'.bcpa').attr('href','tel:'+$tel);
-    });
     $($id+'.check-in').change(function(){
       $id = '#'+$(this).closest('.booking-form').attr('id')+' ';
       $($id+'.booking-summary-check-in').html($(this).val());
