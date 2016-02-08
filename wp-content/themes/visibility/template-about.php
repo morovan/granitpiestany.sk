@@ -16,7 +16,7 @@ get_header(); ?>
           <div class="col-sm-6 our-hotel">
             <div class="container-half">
               <?php
-              if(get_field('about_granit_after_imgbg')){
+              if(get_field('about_granit_after_imgb')){
                 echo do_shortcode(get_field('about_granit_after_img'));
               }
               ?>
