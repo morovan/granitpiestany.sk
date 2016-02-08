@@ -63,7 +63,7 @@ get_header(); ?>
               </div>
             </div>
           </div>
-
+<span>ahoj</span>
         </div>
       </section>
       <div class="container about-granit-after-img">
