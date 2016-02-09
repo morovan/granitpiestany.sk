@@ -2522,8 +2522,19 @@ h2{
 .page-contact .contact-email-phone{
   color:#aa862e;
   font-weight:700;
-  font-size:30px !important;
+  font-size:30px;
 }
+@media (max-width:1200px){
+  .page-contact .contact-email-phone{
+    font-size:23px;
+  }
+}
+@media (max-width:467px){
+  .page-contact .contact-email-phone{
+    font-size:16px;
+  }
+}
+
 .page-contact .contact-email-phone a{
   color:#aa862e;
 }
@@ -2537,7 +2548,7 @@ h2{
   margin-bottom:50px;
 }
 .contact-odsadenie{
-  margin-bottom:30px;
+  margin-bottom:70px;
 }
 .wpcf7 input[type=text],.wpcf7 input[type=email],.wpcf7 input[type=date],.wpcf7 input[type=number],.wpcf7 select{
   display:inline-block;
