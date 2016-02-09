@@ -3091,13 +3091,30 @@ dl.gallery-item{
 }
 /* aktivity  */
 .aktivity-margin {
-  margin-top:55px;
+  margin-top:40px;
 }
 .aktivity-margin p{
-  margin-bottom:82px;
+  margin-bottom:70px;
 }
 .aktivity-margin h2{
-  margin-bottom:35px;
+  font-size:40px;
+}
+.aktivity-margin h2:first-child{
+  margin-top:0;
+}
+@media (min-width:1250px){
+  .aktivity-margin{
+    margin-top:55px;
+  }
+  .aktivity-margin p{
+    margin-bottom:82px;
+  }
+  .aktivity-margin h2:first-child{
+    margin-top:0;
+  }
+  .aktivity-margin h2{
+    font-size:48px;
+  }
 }
 /* thank-you */
 
@@ -3130,29 +3147,21 @@ dl.gallery-item{
   margin-top:-13px;
   text-transform:uppercase;
 }
-.our-hotel-img-wrap.full-width-img-wrap.about img{
-  margin-left:-267px;
-  width:147%;
-}
-
-@media (max-width:570px){
+@media (min-width:1200px){
   .our-hotel-img-wrap.full-width-img-wrap.about img{
-    margin-left:-143px;
-  }
-}
-@media (max-width:375px){
-  .our-hotel-img-wrap.full-width-img-wrap.about img{
-    margin-left:-143px;
+    margin-left:-267px;
+    width:147%;
   }
 }
 .abouth4 {
   color:#695b4e;
-  font-size:16px;
+  font-size:18px;
   text-transform: capitalize;
 }
 .abouth3 {
   margin-top:10px;
   text-transform: capitalize;
+  font-size:38px;
 }
 .adresa-kontakt{
   margin-top:30px;

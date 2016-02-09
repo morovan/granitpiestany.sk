@@ -42,7 +42,7 @@ get_header(); ?>
             <div class="container-half">
               <?php
               if(get_field('about_granit_img1')){
-                echo '<img src="'.get_field('about_granit_img1').'" class="zmizni">';
+                echo '<img src="'.get_field('about_granit_img1').'" class="notinmobile img-responsive">';
               }
               ?>
             </div>
@@ -56,7 +56,7 @@ get_header(); ?>
                 echo '<img src="'.get_field('about_granit__img2').'">';
               }
               if(get_field('about_granit_img3')){
-                echo '<img src="'.get_field('about_granit__img3').'">';
+                echo '<img src="'.get_field('about_granit__img3').'" class="img-responsive">';
               }
               ?>
             </div>
@@ -84,7 +84,7 @@ get_header(); ?>
               <div class="container-half">
                  <?php
                 if(get_field('about_granit__img4')){
-                  echo '<img src="'.get_field('about_granit__img4').'" class="zmizni">';
+                  echo '<img src="'.get_field('about_granit__img4').'" class="img-responsive notinmobile">';
                 }
                 ?>
               </div>
@@ -96,7 +96,7 @@ get_header(); ?>
 
               <?php
                 if(get_field('about_granit_img5')){
-                  echo '<img src="'.get_field('about_granit_img5').'">';
+                  echo '<img src="'.get_field('about_granit_img5').'" class="img-responsive">';
                 }
                 ?>
 
