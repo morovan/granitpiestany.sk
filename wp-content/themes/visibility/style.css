@@ -2536,6 +2536,9 @@ h2{
   text-transform:uppercase;
   margin-bottom:50px;
 }
+.contact-odsadenie{
+  margin-bottom:30px;
+}
 .wpcf7 input[type=text],.wpcf7 input[type=email],.wpcf7 input[type=date],.wpcf7 input[type=number],.wpcf7 select{
   display:inline-block;
   width:70%;
@@ -2627,7 +2630,7 @@ h2{
   cursor:pointer;
 }
 .map-canvas{
-  height:495px;
+  height:475px;
 }
 .contact-hotel-detail{
   margin:45px 0;
