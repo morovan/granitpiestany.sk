@@ -8,9 +8,13 @@ get_header(); ?>
       <h1><?php the_title() ?></h1>
       <section>
         <div class="row our-hotel">
-          <div class="col-sm-6 our-hotel our-hotel-img-wrap full-width-img-wrap">
+          <div class="col-sm-6 our-hotel our-hotel-img-wrap full-width-img-wrap about">
             <?php if (has_post_thumbnail()) { ?>
               <img src="<?php echo get_the_post_thumbnail_src(get_the_post_thumbnail($post_id, 'large')); ?>" alt="<?php the_title() ?>">
+            <?php } ?>
+           <!-- <?php if (has_post_thumbnail()) { ?>
+              <div class="our-hotel-img" style="background-image:url(<?php echo get_the_post_thumbnail_src(get_the_post_thumbnail($post_id, 'large')); ?>)">
+              </div>-->
             <?php } ?>
           </div>
           <div class="col-sm-6 our-hotel">
@@ -37,8 +41,8 @@ get_header(); ?>
           <div class="col-sm-6 our-hotel">
             <div class="container-half">
               <?php
-              if(get_field('about_granit__img1')){
-                echo do_shortcode(get_field('about_granit_img1'));
+              if(get_field('about_granit_img1')){
+                echo '<img src="'.get_field('about_granit_img1').'">';
               }
               ?>
             </div>
@@ -49,7 +53,10 @@ get_header(); ?>
             <div class="col-sm-6 our-hotel our-hotel-img-wrap full-width-img-wrap">
               <?php
               if(get_field('about_granit__img2')){
-                echo do_shortcode(get_field('about_granit_img2'));
+                echo '<img src="'.get_field('about_granit__img2').'">';
+              }
+              if(get_field('about_granit_img3')){
+                echo '<img src="'.get_field('about_granit__img3').'">';
               }
               ?>
             </div>
@@ -59,11 +66,52 @@ get_header(); ?>
                 if(get_field('about_granit_after_img2')){
                   echo do_shortcode(get_field('about_granit_after_img2'));
                 }
+
                 ?>
               </div>
             </div>
           </div>
-<span>ahoj</span>
+
+          <div class="row">
+            <div class="col-sm-6 our-hotel our-hotel-img-wrap full-width-img-wrap">
+              <?php
+              if(get_field('about_granit_after_img4')){
+                echo do_shortcode(get_field('about_granit_after_img4'));
+              }
+              ?>
+            </div>
+            <div class="col-sm-6 our-hotel">
+              <div class="container-half">
+                 <?php
+                if(get_field('about_granit__img4')){
+                  echo '<img src="'.get_field('about_granit__img4').'">';
+                }
+                ?>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-6 our-hotel our-hotel-img-wrap full-width-img-wrap">
+
+              <?php
+                if(get_field('about_granit_img5')){
+                  echo '<img src="'.get_field('about_granit_img5').'">';
+                }
+                ?>
+
+            </div>
+            <div class="col-sm-6 our-hotel">
+              <div class="container-half">
+                <?php
+                if(get_field('about_granit_after_img5')){
+                echo do_shortcode(get_field('about_granit_after_img5'));
+                }
+                ?>
+              </div>
+            </div>
+          </div>
+
         </div>
       </section>
       <div class="container about-granit-after-img">
