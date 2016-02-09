@@ -212,6 +212,9 @@ a:hover,a:active,a:focus{
   background:url(images/temp-bg.jpg) no-repeat center top;
   background-size:cover;
 }
+.admin .fpip{
+  top:32px;
+}
 .fpip-content{
   display:table-cell;
   height:545px;
@@ -2137,7 +2140,7 @@ h1{
   text-decoration:none;
 }
 
-.footer-hotels a{
+.footer-hotels a,.footer-hotels .hotel-not-url{
   display:block;
   padding:15px;
   width:20%;
@@ -2150,7 +2153,7 @@ h1{
   border:1px solid #b69a71;
   border-left:none;
 }
-.footer-hotels a:first-child{
+.footer-hotels a:first-child,.footer-hotels .hotel-not-url:first-child{
   border-left:1px solid #b69a71;
 }
 .footer-hotels a:hover,
@@ -2159,53 +2162,53 @@ h1{
   color:#fff;
   background:#b69a71;
 }
-.footer-hotels a div{
+.footer-hotels a div,.footer-hotels .hotel-not-url div{
   display:table-cell;
   width:210px;
   height:110px;
   vertical-align:middle;
 }
-.footer-hotels a strong{
+.footer-hotels a strong,.footer-hotels .hotel-not-url strong{
   font-size:24px;
   display:block;
   margin:3px 0 0 0;
 }
 @media all and (max-width:991px){
-  .footer-hotels a{
+  .footer-hotels a,.footer-hotels .hotel-not-url{
     padding:5px;
     font-size:12px;
   }
-  .footer-hotels a strong{
+  .footer-hotels a strong,.footer-hotels .hotel-not-url strong{
     font-size:18px;
   }
 }
 @media all and (max-width:699px){
-  .footer-hotels a{
+  .footer-hotels a,.footer-hotels .hotel-not-url{
     font-size:10px;
   }
-  .footer-hotels a div{
+  .footer-hotels a div,.footer-hotels .hotel-not-url div{
     height:80px;
   }
-  .footer-hotels a strong{
+  .footer-hotels a strong,.footer-hotels .hotel-not-url strong{
     font-size:14px;
   }
 }
 @media all and (max-width:549px){
-  .footer-hotels a{
+  .footer-hotels a,.footer-hotels .hotel-not-url{
     width:100%;
     float:none;
     font-size:14px;
     border-left:1px solid #b69a71;
     border-top:none;
   }
-  .footer-hotels a:first-child{
+  .footer-hotels a:first-child,.footer-hotels .hotel-not-url:first-child{
     border-top:1px solid #b69a71;
   }
-  .footer-hotels a div{
+  .footer-hotels a div,.footer-hotels .hotel-not-url div{
     height:80px;
     width:505px;
   }
-  .footer-hotels a strong{
+  .footer-hotels a strong,.footer-hotels .hotel-not-url strong{
     font-size:24px;
   }
 }

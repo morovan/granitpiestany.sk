@@ -6,7 +6,7 @@
         <?php
         $posts = get_posts(array('post_type' => 'hotel'));
         foreach ( $posts as $post ): ?>
-        <?php if(get_field('hotel_url')){ echo '<a href="'.get_field('hotel_url').'">'; } ?>
+        <?php if(get_field('hotel_url')){ echo '<a href="'.get_field('hotel_url').'">'; }else{ echo '<div class="hotel-not-url">'; } ?>
           <div>
             <?php if(basename(get_permalink())=='nova-polianka'){echo trans('hospital_lang', 'Hospital');}else{echo trans('hotel_lang', 'Hotel');} ?> Granit
             <strong><?php the_title(); ?></strong>
@@ -16,7 +16,7 @@
               }
             ?>
           </div>
-        <?php if(get_field('hotel_url')){ echo '</a>'; } ?>
+        <?php if(get_field('hotel_url')){ echo '</a>'; }else{ echo '</div>'; } ?>
         <?php the_post($post); ?>
         <?php endforeach; ?>
         <div class="clear"></div>
