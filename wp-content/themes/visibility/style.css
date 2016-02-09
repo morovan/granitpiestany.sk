@@ -2509,10 +2509,9 @@ h2{
   font-size:29px;
 }
 .page-contact .contact-email-phone{
-  padding:50px 0;
+  padding:10px 0;
 }
 .page-contact .contact-email-phone > span{
-  margin-right:10px;
   display:inline-block;
   margin-bottom:10px;
 }
@@ -2523,7 +2522,7 @@ h2{
 .page-contact .contact-email-phone{
   color:#aa862e;
   font-weight:700;
-  font-size:30px;
+  font-size:30px !important;
 }
 .page-contact .contact-email-phone a{
   color:#aa862e;
@@ -2531,7 +2530,7 @@ h2{
 .page-contact .contact-email-phone a:hover{
   color:#66883f;
 }
-.page-contact .contact-us-title{
+.page-contact h1{
   font-weight:700;
   font-size:46px;
   text-transform:uppercase;
@@ -2628,7 +2627,7 @@ h2{
   cursor:pointer;
 }
 .map-canvas{
-  height:236px;
+  height:495px;
 }
 .contact-hotel-detail{
   margin:45px 0;
