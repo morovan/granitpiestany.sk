@@ -3089,7 +3089,16 @@ dl.gallery-item{
     margin-left:-6px;
   }
 }
-
+/* aktivity  */
+.aktivity-margin {
+  margin-top:55px;
+}
+.aktivity-margin p{
+  margin-bottom:82px;
+}
+.aktivity-margin h2{
+  margin-bottom:35px;
+}
 /* thank-you */
 
 .backtoprvs{
