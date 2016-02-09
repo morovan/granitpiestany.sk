@@ -119,6 +119,7 @@ get_header(); ?>
     }
   </script>
 <div class="container page-contact">
+  <!--   mato toto prosim skontrolovat co z toho tu musi byt   zaciatok -->
   <?php if(have_posts()):while(have_posts()):the_post(); ?>
     <?php if(has_post_thumbnail()): ?>
       <img src="<?php echo get_the_post_thumbnail_src(get_the_post_thumbnail($post_id,'large')); ?>" alt="<?php the_title(); ?>" class="post-thumbnail" width="100%">
@@ -133,43 +134,25 @@ get_header(); ?>
       ?>
     <?php endif; ?>
     <?php query_posts('post_type=hotel');if(have_posts()):while(have_posts()):the_post(); ?>
-    <div class="row contact-hotel-detail">
-      <div class="col-md-6">
-        HOTEL GRANIT
-        <h3>
-         <?php the_title() ?>
-        </h3>
-        <div class="subtittle_contact">
-        <?php
-          if(get_field('subtittle_hotel')){
-            echo get_field('subtittle_hotel');
-          }
-        ?></div>
-        <p><br>
-          <?php
-          if($map = get_field('hotel_map')){
-            echo (isset($map['address']) ? $map['address'] : '');
-          }
-          ?>
-          <br/><br/>
-          <?php
-          if(get_field('hotel_phone')){
-            echo get_field('hotel_phone');
-          }
-          ?><br/>
-        <a href="mailto:<?php echo (get_field('hotel_email') ? get_field('hotel_email') : '')?>"><?php echo (get_field('hotel_email') ? get_field('hotel_email') : ''); ?></a><br/>
-        <a target="_blank" href="<?php echo (get_field('hotel_url') ? get_field('hotel_url') : '')?>"><?php if(basename(get_permalink())!='nova-polianka'){ echo trans('hotel_url_lang', 'Hotel site'); }else{ echo trans('hospital_url_lang', 'Hospital site'); } ?></a>
-        </p>
-      </div>
-      <div class="col-md-6">
-        <div class="map-canvas" id="map-canvas-<?php echo basename(get_permalink()); ?>"></div>
-          <script type="text/javascript">
-            <?php if($map = get_field('hotel_map')):
-              echo 'initialize('.$map['lat'].', '.$map['lng'].', "map-canvas-'.basename(get_permalink()).'", "'.$map['address'].'");';
-            endif; ?>
-          </script>
-      </div>
-    </div>
     <?php endwhile;endif;wp_reset_query(); ?>
+  <!--   mato toto prosim skontrolovat co z toho tu musi byt   koniec -->
+
+
+  <div class="row contact-hotel-detail">
+    <div class="col-md-12">
+      <div class="map-canvas" id="map-canvas-<?php echo basename(get_permalink()); ?>">
+      </div>
+      <script type="text/javascript">
+        <?php if($map = get_field('contact_map')):
+          echo 'initialize('.$map['lat'].', '.$map['lng'].', "map-canvas-'.basename(get_permalink()).'", "'.$map['address'].'");';
+        endif; ?>
+      </script>
+      <?php
+      if(get_field('icons-contact')){
+        echo do_shortcode(get_field('icons-contact'));
+      }
+      ?>
+    </div>
+  </div>
 </div>
 <?php get_footer(); ?>

@@ -1,5 +1,4 @@
 <?php get_header(); ?>
-
 <div class="container">
   <h1 class="blog-title"><?php
     query_posts('post_type=theme-settings');if(have_posts()):while(have_posts()):the_post();

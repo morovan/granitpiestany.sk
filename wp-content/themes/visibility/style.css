@@ -170,9 +170,11 @@ a:hover,a:active,a:focus{
     display:none;
   }
 }
-@media all and (max-width:768px){
+@media all and (max-width:767px){
   .admin .navbar-fixed-top{
     top:46px;
+  }
+  .notinmobile{display:none;
   }
 }
 
@@ -3116,9 +3118,20 @@ dl.gallery-item{
   margin-top:-13px;
   text-transform:uppercase;
 }
-.our-hotel-img-wrap.full-width-img-wrap.about.about img{
+.our-hotel-img-wrap.full-width-img-wrap.about img{
   margin-left:-267px;
   width:147%;
+}
+
+@media (max-width:570px){
+  .our-hotel-img-wrap.full-width-img-wrap.about img{
+    margin-left:-143px;
+  }
+}
+@media (max-width:375px){
+  .our-hotel-img-wrap.full-width-img-wrap.about img{
+    margin-left:-143px;
+  }
 }
 .abouth4 {
   color:#695b4e;
