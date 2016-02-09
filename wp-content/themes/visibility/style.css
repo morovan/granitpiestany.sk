@@ -2506,12 +2506,13 @@ h2{
 .page-contact h3{
   margin-top:0;
   text-transform:uppercase;
+  font-size:29px;
 }
 .page-contact .contact-email-phone{
-  padding:70px 0;
+  padding:50px 0;
 }
 .page-contact .contact-email-phone > span{
-  margin-right:70px;
+  margin-right:10px;
   display:inline-block;
   margin-bottom:10px;
 }
@@ -2522,7 +2523,7 @@ h2{
 .page-contact .contact-email-phone{
   color:#aa862e;
   font-weight:700;
-  font-size:38px;
+  font-size:30px;
 }
 .page-contact .contact-email-phone a{
   color:#aa862e;
@@ -3109,7 +3110,12 @@ dl.gallery-item{
 .abouth4 {
   color:#695b4e;
   font-size:16px;
+  text-transform: capitalize;
 }
 .abouth3 {
   margin-top:10px;
+  text-transform: capitalize;
+}
+.adresa-kontakt{
+  margin-top:30px;
 }
