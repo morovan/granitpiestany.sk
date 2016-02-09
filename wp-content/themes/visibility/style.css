@@ -3102,3 +3102,11 @@ dl.gallery-item{
   margin-top:-13px;
   text-transform:uppercase;
 }
+.our-hotel-img-wrap.full-width-img-wrap.about.about img{
+  margin-left:-267px;
+  width:147%;
+}
+.abouth4 {
+  color:#695b4e;
+  font-size:16px;
+}
