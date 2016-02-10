@@ -3116,6 +3116,13 @@ dl.gallery-item{
     font-size:48px;
   }
 }
+/*  Ubytovanie  */
+.rooms{
+  list-style-type:none;
+}
+.rooms li{
+  margin-bottom:15px;
+}
 /* thank-you */
 
 .backtoprvs{
@@ -3166,3 +3173,4 @@ dl.gallery-item{
 .adresa-kontakt{
   margin-top:30px;
 }
+
