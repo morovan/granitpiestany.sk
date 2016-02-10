@@ -120,6 +120,12 @@ a:hover,a:active,a:focus{
 .gallery-columns-8 .gallery-item{
   width:12.5% !important;
 }
+.bot-mar-50{
+  margin-bottom:30px;
+}
+.top-mar-34{
+  margin-top:34px;
+}
 @media all and (max-width:991px){
   .gallery-columns-8 .gallery-item,
   .gallery-columns-7 .gallery-item,
@@ -177,6 +183,7 @@ a:hover,a:active,a:focus{
   .notinmobile{display:none;
   }
 }
+
 
 /* header ------------------------------------------------------------------- */
 
@@ -3089,9 +3096,60 @@ dl.gallery-item{
     margin-left:-6px;
   }
 }
+/* ubytovanie   rooms  */
+.ubytovanie-margin{
+  margin-top:80px;
+}
+.rooms-table{
+  background-color: transparent;
+  border:0;
+  margin-bottom:25px;
+}
+.rooms-table td{
+  border:0 !important;
+  padding:11px 75px 12px 75px;
+}
+.rooms-table {
+  width: 100%;
+}
+.rooms-tablelast{
+  padding-bottom:29px !important;
+}
+.rooms-table tr:last-child{
+  border-bottom:1px solid #ccc4b0 !important;
+}
+.rooms-table tr:first-child{
+  border-bottom:1px solid #ccc4b0 !important;
+}
+.rooms-h2 {
+  color:#988f76;
+  margin-top:45px;
+  margin-top:45px;
+}
+.rooms-mt42{
+  margin-top:42px;
+}
+.rooms-mb40{
+  margin-bottom:40px;
+  margin-top:55px;
+}
+.thead{
+  text-transform: uppercase;
+  font-weight: bold;
+}
+@media all and (max-width:617px){
+  .rooms-table td{
+    padding: 11px 0 12px 5px;
+    width: auto;}
+}
+/* rehabilitacia */
+.rehabilitacia-line{
+  margin-bottom:34px;
+}
+
 /* aktivity  */
 .aktivity-margin {
-  margin-top:40px;
+  margin-top:50px;
 }
 .aktivity-margin p{
   margin-bottom:70px;
