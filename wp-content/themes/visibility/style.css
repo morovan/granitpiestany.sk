@@ -279,6 +279,11 @@ a:hover,a:active,a:focus{
   color:#35291f;
   font-size:18px;
 }
+@media all and (max-width:1143px){
+  .navbar-nav>li>a{
+    font-size:16px;
+  }
+}
 
 .navbar-nav>li.current-menu-item>a,
 .navbar-nav>li.current_page_parent>a,
@@ -677,6 +682,13 @@ a:hover,a:active,a:focus{
     }
   }
 }
+@media only screen and (max-width:994px){
+  .navbar-nav > li > a{
+    padding:11px;
+    font-size:15px;
+  }
+}
+
 @media only screen and (max-width:991px){
   .navbar-brand img,.navbar-fixed-top,.booking-btn{
     height:140px;
@@ -709,8 +721,8 @@ a:hover,a:active,a:focus{
   }
   @media only screen and (min-width:768px){
     .navbar-nav>li>a{
-      padding:15px 8px;
-      font-size:14px;
+      padding:12px 8px;
+      font-size:13px;
     }
     .scroll .navbar-nav>li>a{
       padding:19px 8px;
@@ -2133,7 +2145,6 @@ h1{
 .footer{
   background:#695b4e;
   color:#fff;
-  padding:60px 0 0 0;
   margin:100px 0 0 0;
 }
 
@@ -2159,6 +2170,11 @@ h1{
   text-transform:uppercase;
   border:1px solid #b69a71;
   border-left:none;
+}
+
+.footer-hotels {
+  margin-bottom: 50px;
+  margin-top:25px;
 }
 .footer-hotels a:first-child,.footer-hotels .hotel-not-url:first-child{
   border-left:1px solid #b69a71;
@@ -2265,7 +2281,7 @@ h1{
 }
 .footer .contact-info{
   font-size:17px;
-  margin:0 0 10px 0;
+  margin:0 0 18px 0;
 }
 .footer .contact-info a:hover,
 .footer .contact-info a:active,
@@ -2295,12 +2311,34 @@ h1{
     font-size:23px;
   }
 }
+.footer-facebook{
+  width:45%;
+}
+@media all and (min-width:462px){
+  .footer-facebook{
+    width:25%;
+  }
+}
+@media all and (min-width:768px){
+  .footer-facebook{
+    width:100%;
+  }
+}
 @media all and (max-width:991px){
   .footer-right .text-right{
     text-align:left;
   }
+  .footer .navbar-nav>li>a{
+    font-size:13px;
+  }
   .footer-right img{
     margin:10px 0 60px 0;
+  }
+}
+@media all and (max-width:375px){
+  .footer .navbar-nav>li>a{
+    font-size:15px;
+    margin-bottom:5px;
   }
 }
 @media all and (max-width:767px){
