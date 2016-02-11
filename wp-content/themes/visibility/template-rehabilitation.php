@@ -44,5 +44,27 @@ get_header(); ?>
       get_search_form();
       ?>
     <?php endif; ?>
+    <div class="row our-hotel">
+      <div class=" text-center kontaktuj">
+        <h2 class="mobile-small"> Máte záujem o kúpeľný pobyt?</h2>
+        <p class="mt-kontaktuj">V prípade záujmu nás neváhajte kontaktovať e-mailom:<a class="color" href="mailto:
+          <?php
+          if(get_field('email')){
+            echo (get_field('email'));
+          }
+          ?>">
+            <?php
+            if(get_field('email')){
+              echo (get_field('email'));
+            }
+            ?>
+          </a>alebo telefonicky:<span class="color">
+        <?php
+        if(get_field('telefon')){
+          echo (get_field('telefon'));
+        }
+        ?>
+      </span></p></div>
+    </div>
   </div>
 <?php get_footer(); ?>

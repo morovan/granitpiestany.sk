@@ -3124,7 +3124,7 @@ dl.gallery-item{
 .rooms-h2 {
   color:#988f76;
   margin-top:45px;
-  margin-top:45px;
+  margin-bottom:45px;
 }
 .rooms-mt42{
   margin-top:42px;
@@ -3232,3 +3232,38 @@ dl.gallery-item{
   margin-top:30px;
 }
 
+.kontaktuj{
+  border:1px solid black;
+  margin-left:auto;
+  margin-right:auto;
+  width:95%;
+  margin-top:40px;
+  padding: 60px 1px 55px 1px;
+  overflow:hidden;
+}
+.kontaktuj .color{
+  color:#66883f;
+}
+.mt-kontaktuj {
+  margin-top:30px;
+}
+@media (max-width:500px){
+  .mobile-small{
+    font-size:32px !important;
+  }
+  .about-granit h2 {
+    font-size: 32px;
+  }
+  .aktivity-margin h2{
+    margin-top:-30px !important;
+  }
+  .mb-45{
+    margin-bottom:45px;
+  }
+  .aktivity-margin .mb-low-p{
+    margin-bottom:10px;
+  }
+}
+.dva{
+margin-left:0;
+}
