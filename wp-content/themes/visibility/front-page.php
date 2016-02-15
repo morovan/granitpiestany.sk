@@ -20,7 +20,7 @@ if(get_field('fb_url')){
 endwhile;endif; ?>
 <div class="fpip-container">
   <div class="row">
-    <div class="col-sm-6">
+    <div class="col-sm-6 fpip-col">
       <div class="fpip">
         <div class="fpip-wrap" id="slide2"></div>
         <div class="fpip-wrap" id="slide3"></div>
@@ -42,13 +42,39 @@ endwhile;endif; ?>
   </div>
 </div>
 
-  <div class="row hotels">
+<?php
+$posts = get_posts(array('post_type' => 'offer','posts_per_page' => 3));
+  
+  $no_offer = 0;
+  
+  foreach ( $posts as $post ) :
+    
+    $no_offer++;
+  
+  endforeach;
+  ?>
+
+  <div class="row hotels<?php
+    
+    if($no_offer==0){
+      echo ' sr-only';
+    }
+    ?>">
     <?php
-  $posts = get_posts(array('post_type' => 'offer'));
+  
 
   foreach ( $posts as $post ) : ?>
     <?php the_post($post); ?>
-    <div class="col-sm-6 col-md-3">
+    <div class="<?php
+    
+    if($no_offer==3){
+      echo 'col-sm-6 col-md-3';
+    }else if($no_offer==2){
+      echo 'col-sm-6 col-md-4';
+    }else{
+      echo 'col-sm-6';
+    }
+    ?>">
       <section>
         <a href="<?php the_permalink(); ?>" class="hotel">
           <div class="row">
@@ -85,6 +111,22 @@ endwhile;endif; ?>
       </section>
     </div>
     <?php endforeach; ?>
+    <div class="<?php
+    
+    if($no_offer==3){
+      echo 'col-sm-6 col-md-3';
+    }else if($no_offer==2){
+      echo 'col-sm-6 col-md-4';
+    }else{
+      echo 'col-sm-6';
+    }
+    ?>">
+      <section>
+        <a href="<?php the_permalink(); ?>" class="hotel more">
+         viac
+        </a>
+      </section>
+    </div>
   </div>
   <div class="hotel-alt"></div>
   <?php $args = array(
