@@ -39,6 +39,12 @@ $(function(){
   $('.searchform-close').click(function(){
     $('#fullsearch').fadeOut('quick');
   });
+
+  // height fix
+  $('.height-fix-to').height($('.height-fix-from').height());
+  $(window).resize(function(){
+    $('.height-fix-to').height($('.height-fix-from').height());
+  });
   
   /* menu */
   if($(window).width() > 752){
@@ -95,7 +101,15 @@ $(function(){
   $('.hotel,.hotel header a,.hotel-img,.hotel header a div').css('height',$h_hotel+'px');
   $('.hotel header a div').css('width',$w_hotel+'px');
   $('.hotel-img').css('margin-bottom','-'+$h_hotel+'px');
-  $('.fpip-container,.fpip-content').css('height',$(window).height()-$('.hotel-img').height()-181+'px');
+
+  if($(window).width()>1084){
+    $('.fpip-container,.fpip-content').css('height',$(window).height()-$('.hotel-img').height()-181+'px');
+  }else if($(window).width()>752){
+    $('.fpip-container,.fpip-content').css('height',$(window).height()-$('.hotel-img').height()-140+'px');
+  }else{
+    $('.fpip-container,.fpip-content').css('height',$(window).height()-$('.hotel-img').height()-70+'px');
+  }
+
   $('.alt-navbar h2').css('padding-top',$p_logo+'px');
   
   if($(window).height()<980){
@@ -137,7 +151,13 @@ $(function(){
     $('.hotel,.hotel header a,.hotel-img,.hotel header a div').css('height',$h_hotel+'px');
     $('.hotel header a div').css('width',$w_hotel+'px');
     $('.hotel-img').css('margin-bottom','-'+$h_hotel+'px');
-    $('.fpip-container,.fpip-content').css('height',$(window).height()-$('.hotel-img').height()-181+'px');
+    if($(window).width()>1084){
+      $('.fpip-container,.fpip-content').css('height',$(window).height()-$('.hotel-img').height()-181+'px');
+    }else if($(window).width()>752){
+      $('.fpip-container,.fpip-content').css('height',$(window).height()-$('.hotel-img').height()-140+'px');
+    }else{
+      $('.fpip-container,.fpip-content').css('height',$(window).height()-$('.hotel-img').height()-70+'px');
+    }
     $('.alt-navbar h2').css('padding-top',$p_logo+'px');
 
     if($(window).height()<980){
@@ -163,6 +183,7 @@ $(function(){
       $('.hotel header a').css('padding-top',0);
       $('.hotel header a div').css('height',$h_hotel+'px');
     }
+
   });
   
   $('.hotel').click(function(){
@@ -220,6 +241,7 @@ $(function(){
         $('.hotel header a div').css('height',$h_hotel+'px');
       },1);
     }
+
   });
 
   /* video modal */

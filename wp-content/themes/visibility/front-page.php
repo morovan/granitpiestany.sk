@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+
 <?php
 $args = array(
   'post_type'  => 'page',
@@ -27,9 +28,15 @@ endwhile;endif; ?>
         <div class="fpip-wrap" id="slide5"></div>
       </div>
     </div>
-    <div class="col-sm-6">
-      <div class="fpip-content">
-        <h1>Granit Pieštany</h1>
+    <div class="col-sm-6 ">
+      <div class="col-md-8 col-sm-offset-2">
+        <div class="fpip-content">
+          <h1><span>Hotel Granit </span>Pieštany <span>kúpeľný ústav</span></h1>
+          <div class="m-top-20">
+            <p class="fp-para">Našim klientom sa snažíme vytvoriť podmienky na nezabudnuteľný pobyt, počas ktorého si oddýchnu a načerpajú novú energiu. Držíme sa nášho motta „Váš domov mimo domova“ a veríme, že počas pobytu u nás sa cítia komfortne a príjemne.</p>
+            <a href='/booking' class='btn btn-more no-margins m-top-40 '>rezervujte si ubytovanie</a>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -43,31 +50,38 @@ endwhile;endif; ?>
     <?php the_post($post); ?>
     <div class="col-sm-6 col-md-3">
       <section>
-        <div class="hotel">
-            <header>
-            <?php if(has_post_thumbnail()){ ?>
-              <div class="hotel-img" style="background-image:url(<?php echo get_the_post_thumbnail_src(get_the_post_thumbnail($post_id,'large')); ?>)">
-                <div class="toggle to-open"><span class="ion-android-arrow-up"></span></div>
+        <a href="<?php the_permalink(); ?>" class="hotel">
+          <div class="row">
+            <div class="col-sm-4 col-lg-6 text-center">
+              <?php if(has_post_thumbnail()){ ?>
+                <div class="hotel-img" style="background-image:url(<?php echo get_the_post_thumbnail_src(get_the_post_thumbnail($post_id,'large')); ?>)">
+                </div>
+                <div class="btn btn-more hidden-btn text-center" ref="<?php the_permalink(); ?>#book-offer-detail"><?php echo trans('more_information', 'More information') ?></div>
+              <?php } ?>
+            </div>
+            <div class="col-sm-8 col-lg-6 fpage">
+              <div class="browny">
+                <?php
+                if (get_field('offer_date_from')) {
+                  echo date_i18n('j. n.', strtotime(get_field('offer_date_from')));
+                }
+                if (get_field('offer_date_to')) {
+                  echo ' - ' . date_i18n('j. n. Y', strtotime(get_field('offer_date_to')));
+                }
+                ?>
+
               </div>
-            <?php } ?>
-            <a href="<?php the_permalink(); ?>">
-              <div>
-                <h1><?php the_title(); ?></h1>
+              <p><?php echo get_the_excerpt(); ?></p>
+              <div class="offer-price pull-left">
+                <?php
+                if (get_field('offer_price')) {
+                  echo get_field('offer_price');
+                }
+                ?>
               </div>
-            </a>
-          </header>
-          <article>
-            <p><?php echo get_the_excerpt(); ?></p>
-          </article>
-          <footer>
-            <a href="<?php the_permalink(); ?>#book"><span class="ion-ios-calendar-outline ion"></span> <?php echo trans('hotel_reservation_lang', 'Hotel Reservation') ?> </a>
-            <a href="<?php echo $offers_url.'?hotel='.basename(get_the_permalink()); ?>"><span class="ion-ios-star-outline ion"></span> <?php echo trans('hotel_offers_lang', 'Hotel Offers') ?></a>
-            <?php if(get_field('hotel_url')){ ?>
-              <a href="<?php echo get_field('hotel_url'); ?>"><span class="ion-ios-information-outline ion"></span> <?php echo trans('hotel_url_lang', 'Hotel site') ?></a>
-            <?php } ?>
-          </footer>
-          <div class="toggle to-close"><span class="ion-android-arrow-down"></span></div>
-        </div>
+            </div>
+          </div>
+        </a>
       </section>
     </div>
     <?php endforeach; ?>
@@ -158,8 +172,85 @@ endwhile;endif; ?>
       <?php echo do_shortcode(get_the_content()); ?>
     </div>
     <?php if(get_field('fp_script')){echo '<script type="text/javascript">'.get_field('fp_script').'</script>';} ?>
+
+  <div class="row hide-p">
+
+    <a href="<?php
+    if(get_field('button1_href')){
+      echo do_shortcode(get_field('button1_href'));
+    }
+    ?>" class="fp-btns col-md-4 "<?php
+    if(get_field('button1_pozadie')){
+      echo ' style="background-image: url('.get_field('button1_pozadie').')"';
+    }
+    ?>>
+      <div class=" text-center fp-padding">
+        <div class="fp-d"><?php
+          if(get_field('button1_title')){
+            echo do_shortcode(get_field('button1_title'));
+          }
+          ?></div>
+        <h3><?php
+          if(get_field('button1_h3')){
+            echo do_shortcode(get_field('button1_h3'));
+          }
+          ?></h3>
+        <div class="btn fp-hide">Viac informácií</div>
+        <div class="fp-plusko"></div>
+      </div>
+    </a>
+
+    <a href="<?php
+    if(get_field('button2_href')){
+      echo do_shortcode(get_field('button2_href'));
+    }
+    ?>" class="fp-btns col-md-4 "<?php
+    if(get_field('button2_pozadie')){
+      echo ' style="background-image: url('.get_field('button2_pozadie').')"';
+    }
+    ?>>
+      <div class=" text-center fp-padding">
+        <div class="fp-d"><?php
+          if(get_field('button2_title')){
+            echo do_shortcode(get_field('button2_title'));
+          }
+          ?></div>
+        <h3><?php
+          if(get_field('button2_h3')){
+            echo do_shortcode(get_field('button2_h3'));
+          }
+          ?></h3>
+        <div class="btn fp-hide">Viac informácií</div>
+        <div class="fp-plusko"></div>
+      </div>
+    </a>
+
+    <a href="<?php
+    if(get_field('button3_href')){
+      echo do_shortcode(get_field('button3_href'));
+    }
+    ?>" class="fp-btns col-md-4 "<?php
+    if(get_field('button3_pozadie')){
+      echo ' style="background-image: url('.get_field('button3_pozadie').')"';
+    }
+    ?>>
+      <div class=" text-center fp-padding">
+        <div class="fp-d"><?php
+          if(get_field('button3_title')){
+            echo do_shortcode(get_field('button3_title'));
+          }
+          ?></div>
+        <h3><?php
+          if(get_field('button3_h3')){
+            echo do_shortcode(get_field('button3_h3'));
+          }
+          ?></h3>
+        <div class="btn fp-hide">Viac informácií</div>
+        <div class="fp-plusko"></div>
+      </div>
+    </a>
+  </div>
   <?php endwhile;else:?>
     <p><?php _e('Sorry, this page does not exist.','lang'); ?></p>
   <?php endif;wp_reset_query(); ?>
-    
 <?php get_footer(); ?>
