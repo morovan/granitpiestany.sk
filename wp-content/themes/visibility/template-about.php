@@ -6,18 +6,12 @@ get_header(); ?>
   <div class="our-hotels about-granit">
     <?php if (have_posts()):while (have_posts()):the_post(); ?>
       <h1><?php the_title() ?></h1>
-      <section>
+     <section>
         <div class="row our-hotel">
-          <div class="col-sm-6 our-hotel our-hotel-img-wrap full-width-img-wrap about">
-            <?php if (has_post_thumbnail()) { ?>
-              <img src="<?php echo get_the_post_thumbnail_src(get_the_post_thumbnail($post_id, 'large')); ?>" alt="<?php the_title() ?>">
-            <?php } ?>
-           <!-- <?php if (has_post_thumbnail()) { ?>
-              <div class="our-hotel-img" style="background-image:url(<?php echo get_the_post_thumbnail_src(get_the_post_thumbnail($post_id, 'large')); ?>)">
-              </div>-->
-            <?php } ?>
-          </div>
-          <div class="col-sm-6 our-hotel">
+          <div class="col-sm-6 col-lg-5 height-fix-to bckg-norepeat"<?php if (has_post_thumbnail()) { ?>
+            style="background-image:url(<?php echo get_the_post_thumbnail_src(get_the_post_thumbnail($post_id, 'large')); ?>)"
+          <?php } ?>></div>
+          <div class="col-sm-6 col-lg-offset-1 height-fix-from">
             <div class="container-half">
               <?php
               if(get_field('about_granit_after_img')){

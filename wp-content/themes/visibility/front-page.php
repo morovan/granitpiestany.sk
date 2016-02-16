@@ -78,11 +78,11 @@ $posts = get_posts(array('post_type' => 'offer','posts_per_page' => 3));
       <section>
         <a href="<?php the_permalink(); ?>" class="hotel">
           <div class="row">
-            <div class="col-sm-4 col-lg-6 text-center">
+            <div class="col-sm-4 col-lg-6 text-center fp-height ">
               <?php if(has_post_thumbnail()){ ?>
                 <div class="hotel-img" style="background-image:url(<?php echo get_the_post_thumbnail_src(get_the_post_thumbnail($post_id,'large')); ?>)">
                 </div>
-                <div class="btn btn-more hidden-btn text-center" ref="<?php the_permalink(); ?>#book-offer-detail"><?php echo trans('more_information', 'More information') ?></div>
+                <div class=" btn hidden-btn text-center" ref="<?php the_permalink(); ?>#book-offer-detail"><?php echo trans('more_information', 'More information') ?></div>
               <?php } ?>
             </div>
             <div class="col-sm-8 col-lg-6 fpage">
@@ -98,12 +98,21 @@ $posts = get_posts(array('post_type' => 'offer','posts_per_page' => 3));
 
               </div>
               <p><?php echo get_the_excerpt(); ?></p>
-              <div class="offer-price pull-left">
+              <div class="offer-price pull-left fp-fw">
+               <span class="price">
                 <?php
                 if (get_field('offer_price')) {
                   echo get_field('offer_price');
                 }
                 ?>
+                 </span>
+                <span class="eurosob">
+                  <?php
+                  if (get_field('offer_price_2')) {
+                    echo get_field('offer_price_2');
+                  }
+                  ?>
+                </span>
               </div>
             </div>
           </div>
@@ -123,7 +132,10 @@ $posts = get_posts(array('post_type' => 'offer','posts_per_page' => 3));
     ?>">
       <section>
         <a href="<?php the_permalink(); ?>" class="hotel more">
-         viac
+          <div class="m-top-30">zobraziť všetky</div>
+          <h2>Špeciálne ponuky</h2>
+          <div class="fp-plusko2">&#10010</div>
+
         </a>
       </section>
     </div>

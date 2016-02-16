@@ -84,6 +84,9 @@
                         if (get_field('offer_price')) {
                           echo get_field('offer_price');
                         }
+                        if (get_field('offer_price_2')) {
+                          echo get_field('offer_price_2');
+                        }
                         ?>
                       </div>
                       <div class="offer-book-btn">

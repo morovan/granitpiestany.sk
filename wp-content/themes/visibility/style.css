@@ -244,6 +244,7 @@ a:hover,a:active,a:focus{
 .admin .fpip{
   top:32px;
 }
+
 @media all and (max-width:767px){
   .fpip{
     height:200px;
@@ -284,6 +285,9 @@ a:hover,a:active,a:focus{
     font-size:13px;
     line-height:1.3;
   }
+  .fpip-content{
+    padding-top:20px;
+  }
   .fpip-content .m-top-20{
     margin-top:5px;
   }
@@ -308,6 +312,7 @@ a:hover,a:active,a:focus{
     margin-top:15px;
     padding:8px 30px;
     font-size:14px;
+    margin-bottom:20px;
   }
 }
 .alt-navbar h2{
@@ -1460,8 +1465,11 @@ a:hover,a:active,a:focus{
 /* front page --------------------------------------------------------------- */
 
 .row.hotels{
-  border-top:1px solid #000;
-  border-bottom:1px solid #000;
+  border-top:1px solid #d2ccc4;
+  border-bottom:1px solid #d2ccc4;
+}
+.hotels .offer-price{
+  font-size:16px;
 }
 .row.hotels, .row.full-width{
   margin-left:0;
@@ -1478,7 +1486,7 @@ a:hover,a:active,a:focus{
   padding-right:0;
 }
 .hotels section{
-  height:260px;
+  height:197px;
   position:relative;
 }
 @media only screen and (min-height:980px){
@@ -1494,14 +1502,10 @@ a:hover,a:active,a:focus{
 
 .hotel{
   position:relative;
-  height:260px;
+  height:197px;
   overflow:hidden;
   display:block;
-  -webkit-transition:height .3s ease-in-out,top .3s ease-in-out;
-  -moz-transition:height .3s ease-in-out,top .3s ease-in-out;
-  -ms-transition:height .3s ease-in-out,top .3s ease-in-out;
-  -o-transition:height .3s ease-in-out,top .3s ease-in-out;
-  transition:height .3s ease-in-out,top .3s ease-in-out;
+  color:#695b4e;
 }
 .browny{
   color:#ab862e;
@@ -1509,10 +1513,10 @@ a:hover,a:active,a:focus{
   margin-top: 18px;
   margin-bottom: 12px;
 }
-.hotel .btn-more{
+.hotel .hidden-btn{
   border: 1px solid white;
-  padding: 10px 15px;
-  margin:226px auto 0 auto;
+  padding: 15px 30px;
+  margin:290px auto 0 auto;
   color:white;
   font-size:12px;
   -webkit-transition:margin .3s ease-in-out;
@@ -1521,14 +1525,41 @@ a:hover,a:active,a:focus{
   -o-transition:margin .3s ease-in-out;
   transition:margin .3s ease-in-out;
 }
-
 .hotel:hover .hidden-btn{
+  display:inline-block;
   color:white;
-  margin:0 auto;
+  margin:85px auto;
+  border:1px solid white;
+  padding:15px 30px;
 }
-.hidden-btn:hover{
-  display:block;
+/*
+@media all and (max-width:1317px){
+  .hotel .hidden-btn{
+    display:none;
+  }
+  .hotel:hover .hiden-btn{
+    display:none;
+  }
 }
+@media all and (min-width:1318px){
+  .hotel .hiden-btn{
+    display:inline-block;
+  }
+
+  .hotel .hidden-btn{
+    border: 1px solid white;
+    padding: 15px 30px;
+    margin:290px auto 0 auto;
+    color:white;
+    font-size:12px;
+    -webkit-transition:margin .3s ease-in-out;
+    -moz-transition:margin .3s ease-in-out;
+    -ms-transition:margin .3s ease-in-out;
+    -o-transition:margin .3s ease-in-out;
+    transition:margin .3s ease-in-out;
+  }
+}
+*/
 .admin .hotel{
   margin-top:32px;
 }
@@ -1540,14 +1571,85 @@ a:hover,a:active,a:focus{
 }
 
 .hotel.more{
-  background:#000;
+  background:#35291f;
   text-align:center;
-  padding:100px 15px 0 15px;
+  padding:30px 15px 50px 15px;
+}
+.fp-plusko2{
+  width: 92%;
+  position: absolute;
+  bottom: 10px;
+}
+.hotel.more:hover{
+  background:#aa862e;
+}
+.hotel.more:hover div{
+  color:white;
+}
+.more{
+  color:white;
+  text-transform:uppercase;
+  font-size:14px;
+}
+.more h2{
+  margin-top:10px;
+  color:white;
+}
+@media all and (max-width:1400px){
+  .more h2{
+  font-size:27px;
+  }
 }
 
 .hotel p{
   height: 78px;
   overflow: hidden;
+  color: #695b4e;
+}
+.hotel:hover p{
+  color: green;
+  text-decoration:none;
+}
+.hotel:active, .hotel:hover, .hotel:focus{
+  text-decoration:none;
+}
+.fpage{
+  margin-left:0;
+  padding-left: 0;
+  padding-right: 18px;
+}
+.eurosob {font-size:11px;}
+@media all and (max-width:844px){
+  .fpage{
+    margin-left:50px;
+    margin-bottom: 20px;
+  }
+  .fp-height{
+    height:288px;
+  }
+  .hotel.more{
+    text-align: center;
+    padding: 50px 15px 85px 15px;
+  }
+  .price {
+    font-size:28px;
+  }
+  .eurosob{
+    font-size:20px;
+  }
+  .browny{
+    margin-top:0;
+  }
+}
+@media all and (min-width:1555px){
+  .price{
+    font-size:25px;
+  }
+}
+@media all and (max-width:1554px) and (min-width:845px){
+  .price{
+    font-size:16px;
+  }
 }
 .fp-btns{
   text-align:center;
@@ -1997,9 +2099,9 @@ h1{
   background-position:261px center;
 }
 .our-hotel-img-wrap.full-width-img-wrap img{
-  width: 167%;
+  width: 100%;
   height: auto;
-  margin-left: -268px;
+
 }
 .bckg-norepeat{
   background-repeat:no-repeat;
@@ -2042,6 +2144,9 @@ h1{
   height:100%;
   top:0;
   left:0;
+}
+.pdg-fix{
+  padding-left:23px;
 }
 
 .hotel-sidebar-map{
@@ -2453,15 +2558,7 @@ h2{
   color:#66883f;
   font-weight:700;
   font-size:32px;
-  padding-top:8px;
-  margin-top:6px;
 }
-.fpage .offer-price{
-
-  margin-top: -15px;
-}
-
-
 .btn-more{
   color:#ab862e;
   text-transform:uppercase;
@@ -2781,6 +2878,9 @@ a.dark-brown:hover, a.dark-brown:hover h2{
 }
 .m-top-40{
   margin-top:40px;
+}
+.m-top-30{
+  margin-top:30px;
 }
 #carousel-horezza{
   margin:90px 0;

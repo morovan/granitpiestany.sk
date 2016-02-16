@@ -72,25 +72,24 @@ $(function(){
     }
   });
 
-  
-  
+
+
   if($(window).width()>1084){
-    $('.fpip-container,.fpip-content').css('height',$(window).height()-441+'px');
+    $('.fpip-container,.fpip-content').css('height',$(window).height()-380+'px');
   }else if($(window).width()>752){
-    $('.fpip-container,.fpip-content').css('height',$(window).height()-402+'px');
+    $('.fpip-container,.fpip-content').css('height',$(window).height()-338+'px');
   }else{
     $('.fpip-container,.fpip-content').css('height','auto');
   }
   $(window).resize(function(){
     if($(window).width()>1084){
-      $('.fpip-container,.fpip-content').css('height',$(window).height()-441+'px');
+      $('.fpip-container,.fpip-content').css('height',$(window).height()-380+'px');
     }else if($(window).width()>752){
-      $('.fpip-container,.fpip-content').css('height',$(window).height()-402+'px');
+      $('.fpip-container,.fpip-content').css('height',$(window).height()-338+'px');
     }else{
       $('.fpip-container,.fpip-content').css('height','auto');
     }
   });
-
   /* video modal */
   if($(window).height()<630) {
     $('.c-video').height($(window).height() - 140 + 'px');
