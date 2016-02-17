@@ -1,5 +1,4 @@
 <?php get_header(); ?>
-
 <?php
 $args = array(
   'post_type'  => 'page',
@@ -34,14 +33,13 @@ endwhile;endif; ?>
           <h1><span>Hotel Granit </span>Pieštany <span>kúpeľný ústav</span></h1>
           <div class="m-top-20">
             <p class="fp-para">Našim klientom sa snažíme vytvoriť podmienky na nezabudnuteľný pobyt, počas ktorého si oddýchnu a načerpajú novú energiu. Držíme sa nášho motta „Váš domov mimo domova“ a veríme, že počas pobytu u nás sa cítia komfortne a príjemne.</p>
-            <a href='/booking' class='btn btn-more no-margins m-top-40 '>rezervujte si ubytovanie</a>
+            <a href='/booking' class='btn btn-more no-margins m-top-40 fp-mbtn '>rezervujte si ubytovanie</a>
           </div>
         </div>
       </div>
     </div>
   </div>
 </div>
-
 <?php
 $posts = get_posts(array('post_type' => 'offer','posts_per_page' => 3));
   
@@ -307,4 +305,5 @@ $posts = get_posts(array('post_type' => 'offer','posts_per_page' => 3));
   <?php endwhile;else:?>
     <p><?php _e('Sorry, this page does not exist.','lang'); ?></p>
   <?php endif;wp_reset_query(); ?>
+
 <?php get_footer(); ?>
