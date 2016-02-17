@@ -1653,7 +1653,8 @@ a:hover,a:active,a:focus{
 .hotel .hidden-btn{
   border: 1px solid white;
   padding: 15px 30px;
-  margin:290px auto 0 auto;
+  margin:197px auto 0 auto;
+  position:relative;
   color:white;
   font-size:12px;
   -webkit-transition:margin .3s ease-in-out;
@@ -1705,10 +1706,30 @@ a:hover,a:active,a:focus{
   background:no-repeat center;
   background-size:cover;
   margin:0 0 -260px 0;
+  position:relative;
+}
+
+.hotel-over-bg{
+  background:rgba(0,0,0,0);
+  position:relative;
+  height:100%;
+  -webkit-transition:background .3s ease-in-out;
+  -moz-transition:background .3s ease-in-out;
+  -ms-transition:background .3s ease-in-out;
+  -o-transition:background .3s ease-in-out;
+  transition:background .3s ease-in-out;
+}
+.hotel:hover .hotel-over-bg{
+  background:rgba(0,0,0,.4);
 }
 
 .hotel.more{
   background:#35291f;
+  -webkit-transition:background .3s ease-in-out;
+  -moz-transition:background .3s ease-in-out;
+  -ms-transition:background .3s ease-in-out;
+  -o-transition:background .3s ease-in-out;
+  transition:background .3s ease-in-out;
   text-align:center;
   padding:30px 15px 50px 15px;
 }
@@ -1717,8 +1738,9 @@ a:hover,a:active,a:focus{
   position: absolute;
   bottom: 10px;
 }
-.hotel.more:hover{
+.hotel.more:hover,.hotel.more:active,.hotel.more:focus{
   background:#aa862e;
+  text-decoration:none;
 }
 .hotel.more:hover div{
   color:white;
