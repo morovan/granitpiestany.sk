@@ -687,6 +687,7 @@ a:hover,a:active,a:focus{
 #booking:checked+.booking{
   padding:40px;
   height:530px;
+  z-index:10;
 }
 .booking.outthere{
   padding:40px 40px 22px 40px;
@@ -847,6 +848,7 @@ a:hover,a:active,a:focus{
   
   .navbar-fixed-top .navbar-collapse{
     max-height:340px;
+    z-index:9;
   }
   
   .header-booking-btn{
@@ -923,7 +925,7 @@ a:hover,a:active,a:focus{
     height:auto;
   }
   .alt-navbar{
-    height:100px;
+    height:110px;
   }
   .alt-navbar img{
     top:auto;
@@ -1036,7 +1038,7 @@ a:hover,a:active,a:focus{
   }
   .header-top .contact-info{
     padding:0;
-    margin-right:-1px;
+    margin-right:5px;
   }
   .header-top .contact-info:first-child{
     padding:0;
@@ -1099,6 +1101,139 @@ a:hover,a:active,a:focus{
     }
   }
 }
+
+.other-hotels-checkbox{
+  display:none;
+}
+.other-hotels{
+  position:absolute;
+  z-index:8;
+  width:174px;
+  height:38px;
+  background:#35291f;
+  padding:0 38px 38px 38px;
+  overflow:hidden;
+  top:180px;
+  -webkit-transition:all .3s ease-in-out;
+  -moz-transition:all .3s ease-in-out;
+  -ms-transition:all .3s ease-in-out;
+  -o-transition:all .3s ease-in-out;
+  transition:all .3s ease-in-out;
+}
+.other-hotels:hover,.other-hotels:active{
+  height:314px;
+  width:500px;
+}
+.scroll .other-hotels{
+  display:none;
+}
+.other-hotels .text-uppercase{
+  color:#bbb0ab;
+  font-size:12px;
+  padding:11px 0 12px 2px;
+  letter-spacing:.5px;
+  word-spacing:2px;
+}
+.other-hotels a{
+  display:block;
+  border-top:1px solid #53453b;
+  border-bottom:1px solid #53453b;
+  margin:-1px 0 0 0;
+  color:#eae0d9;
+  text-transform:uppercase;
+  font-size:8px;
+  line-height:1.2;
+}
+.other-hotels a:hover,.other-hotels a:focus,.other-hotels a:active{
+  color:#aa862e;
+  text-decoration:none;
+}
+.other-hotels a .image{
+  margin-top:-1px;
+  margin-bottom:-1px;
+  height:60px;
+  margin-right:-15px;
+  background:no-repeat center;
+  background-size:cover;
+}
+.other-hotels a strong{
+  display:block;
+  font-size:20px;
+}
+.other-hotels a .ion{
+  font-size:16px;
+  display:inline-block;
+  padding:21px 0 0 0;
+}
+.other-hotels .text-right{
+  padding-left:0;
+}
+.other-hotels-text{
+  padding-top:8px;
+  padding-right:0;
+}
+@media only screen and (max-width:1099px){
+  .other-hotels{
+    top:139px;
+    width:135px;
+    padding:0 22px 38px 22px;
+  }
+}
+@media only screen and (max-width:767px){
+  .other-hotels{
+    top:69px;
+    width:134px;
+  }
+  input[type=checkbox].other-hotels-checkbox{
+    display:block;
+    -webkit-appearance:none;
+    width:134px;
+    height:38px;
+    background:none;
+    border:none;
+    position:absolute;
+    top:69px;
+    margin:0;
+    z-index:10;
+  }
+  input[type=checkbox].other-hotels-checkbox:active,
+  input[type=checkbox].other-hotels-checkbox:focus{
+    border:none;
+    box-shadow:none;
+    outline:none;
+  }
+  .other-hotels-checkbox:checked+.other-hotels{
+    width:500px;
+    height:314px;
+  }
+}
+@media only screen and (max-width:499px){
+  .other-hotels:hover,.other-hotels:active{
+    width:100%;
+  }
+  .other-hotels-checkbox:checked+.other-hotels{
+    width:100%;
+  }
+}
+@media only screen and (max-width:419px){
+  .other-hotels{
+    padding:0 15px 15px 15px;
+  }
+  .other-hotels:hover,.other-hotels:active{
+    height:290px;
+  }
+  .other-hotels a strong{
+    font-size:16px;
+  }
+  .other-hotels-text{
+    padding-top:10px;
+  }
+  .other-hotels-checkbox:checked+.other-hotels{
+    height:290px;
+  }
+}
+
+
 /* scroll menu -------------------------------------------------------------- */
 .navbar-fixed-top.scroll{
   background:#fbf8f2 url(images/bg.png);
@@ -2076,7 +2211,7 @@ h1{
   font-weight:700;
 }
 
-@media (max-width:767px){
+@media all and (max-width:767px){
   h1{font-size:40px;}
 }
 
@@ -2107,6 +2242,11 @@ h1{
   background-repeat:no-repeat;
   background-position:center;
   background-size:cover;
+}
+@media all and (max-width:767px){
+  .height-fix-to{
+    height:300px !important;
+  }
 }
 .our-hotel-img-sidebar{
   display:none;

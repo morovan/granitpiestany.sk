@@ -96,6 +96,32 @@ endwhile;endif;wp_reset_query();
         <span class="icon-bar"></span>
       </button>
       <h1><a class="navbar-brand" href="<?php echo get_site_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/logo-md.png" alt="<?php echo get_bloginfo('name'); ?>" width="174" height="181"></a></h1>
+      <input type="checkbox" class="other-hotels-checkbox">
+      <div class="other-hotels">
+        <div class="text-uppercase"><?php echo trans('our_hotels_lang', 'Our hotels'); ?></div>
+        <?php query_posts('post_type=hotel');if(have_posts()):while(have_posts()):the_post(); ?>
+          <?php if(get_field('hotel_url')){ echo '<a href="'.get_field('hotel_url').'">'; ?>
+            <div class="row">
+              <div class="col-xs-3">
+                <div class="image"<?php if(get_field('hotel_img')){ echo ' style="background-image:url('.get_field('hotel_img').')"'; } ?>></div>
+              </div>
+              <div class="col-xs-8 other-hotels-text">
+                <?php if(basename(get_permalink())=='nova-polianka'){echo trans('hospital_lang', 'Hospital');}else{echo trans('hotel_lang', 'Hotel');} ?> Granit
+                <strong><?php the_title(); ?></strong>
+                <?php
+                if(get_field('subtittle_hotel')){
+                  echo get_field('subtittle_hotel');
+                }
+                ?>
+              </div>
+              <div class="col-xs-1 text-right">
+                <span class="ion-android-arrow-forward ion"></span>
+              </div>
+            </div>
+          </a>
+          <?php } ?>
+        <?php endwhile;endif;wp_reset_query(); ?>
+      </div>
       <div class="booking-btn<?php if(basename($_SERVER['REQUEST_URI'])=='booking'){echo ' sr-only';} ?>"><span class="ion-android-calendar"></span><span class="booking-text"><?php echo trans('book_your_acc_lang', 'Book your accommodation'); ?></span></div>
     </div>
     <div class="header-top text-right">
