@@ -79,6 +79,7 @@ $posts = get_posts(array('post_type' => 'offer','posts_per_page' => 3));
             <div class="col-sm-4 col-lg-6 text-center fp-height ">
               <?php if(has_post_thumbnail()){ ?>
                 <div class="hotel-img" style="background-image:url(<?php echo get_the_post_thumbnail_src(get_the_post_thumbnail($post_id,'large')); ?>)">
+                  <div class="hotel-over-bg"></div>
                 </div>
                 <div class=" btn hidden-btn text-center" ref="<?php the_permalink(); ?>#book-offer-detail"><?php echo trans('more_information', 'More information') ?></div>
               <?php } ?>
