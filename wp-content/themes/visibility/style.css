@@ -209,7 +209,9 @@ a:hover,a:active,a:focus{
 .fp-btn{
  margin-left:0!important;
 }
-
+.fp-mbtn{
+  margin-bottom:20px;
+}
 .fpip-container{
   height:545px;
 }
