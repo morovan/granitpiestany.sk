@@ -210,7 +210,7 @@ a:hover,a:active,a:focus{
  margin-left:0!important;
 }
 .fp-mbtn{
-  margin-bottom:20px;
+  margin-bottom:20px !important;
 }
 .fpip-container{
   height:545px;
